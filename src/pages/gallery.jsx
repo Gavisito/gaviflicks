@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { createClient } from 'contentful';
+import { config } from '../../config';
+
 
 function Gallery() {
   const [imageCollection, setImageCollection] = useState([]); 
