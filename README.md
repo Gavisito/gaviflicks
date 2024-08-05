@@ -1,8 +1,20 @@
-# React + Vite
+# GaviFlicks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React based webapp that I decided to make for my photography hobby. 
 
-Currently, two official plugins are available:
+In this personal project, I intend to:
+- Learn React Router
+- Learn more about API integration (Contentful CMS)
+- Learn about Contentful's headless CMS
+- Improve my skills on image optimization for responsive web design
+- Learn React state management and hooks that I come across in this project
+- Learn how to build different types of gallery format that visitor could choose from ot view the gallery to their preferences (grid, slider, bricks, and more that i have seen when i used Wix Studio, which i personally thought were beautifully executed )
+- and more lesson that I have not mentioend off the top of head!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Tech Stack as of August, 2024:
+- React
+- Contentful CMS
+- Sass
+
+However I will look into other tools that i can learn and help complete this project
