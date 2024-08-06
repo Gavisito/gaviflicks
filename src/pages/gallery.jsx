@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { createClient } from 'contentful';
 import { config } from '../../config';
 
+import Navigation from '../components/navigation';
+
 
 function Gallery() {
   const [imageCollection, setImageCollection] = useState([]); 
@@ -28,6 +30,7 @@ function Gallery() {
           <img src={'https:' + image.fields.file.url} alt={image.fields.title || 'Mystery Image'} />
         </div>
       ))}
+      <Navigation/>
     </div>
   );
 }
