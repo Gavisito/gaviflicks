@@ -118,7 +118,7 @@
     display: none;
   }
   .navigation .company-name {
-    font-size: 17px;
+    font-size: 10vw;
   }
 }
 
@@ -177,6 +177,7 @@
     font-size: 13px;
   }
   .land .land-cols {
+    margin-top: 5%;
     width: 65%;
   }
 }
