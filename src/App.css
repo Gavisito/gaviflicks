@@ -41,7 +41,6 @@
 }
 .navigation .nav-link {
   transition: 0.5s ease;
-  color: rgb(255, 255, 255) !important;
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
@@ -98,8 +97,8 @@
     width: 100%;
     height: -moz-max-content;
     height: max-content;
-    color: black !important;
     font-size: 35px;
+    color: black !important;
     justify-content: center;
   }
   .navigation .nav.active {
@@ -125,12 +124,61 @@
 
 /* landing section of home.jsx */
 .land {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
-  height: 40em;
-  overflow-x: hidden;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 5% 0;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, rgb(255, 7, 189) 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #2000ff 0%, #073aff 100%);
+}
+.land .land-text {
+  display: flex;
+  background-color: transparent;
+  color: white !important;
+  width: 45%;
+  height: -moz-max-content;
+  height: max-content;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+.land .land-cols {
+  display: flex;
+  background-color: transparent;
+  width: 45%;
+  height: -moz-max-content;
+  height: max-content;
+  align-items: center;
+}
+.land .land-cols .box4, .land .land-cols .box3, .land .land-cols .box2, .land .land-cols .box1 {
+  display: flex;
+  background-color: #ffffff;
+  width: 25%;
+  height: 25em;
+  border: 1px solid rgb(0, 0, 0);
+}
+.land .land-cols .box1 {
+  height: 21em;
+}
+.land .land-cols .box3 {
+  height: 16em;
+}
+.land .land-cols .box4 {
+  height: 20em;
+}
+@media (max-width: 740px) {
+  .land .land-text {
+    width: 70%;
+    margin: 5% 0;
+    font-size: 13px;
+  }
+  .land .land-cols {
+    width: 65%;
+  }
 }
 
 .line {

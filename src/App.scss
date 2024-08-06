@@ -46,7 +46,6 @@
   
     .nav-link {
       transition: 0.5s ease;
-      color: rgb(255, 255, 255) !important;
       cursor: pointer;
       font-size: 20px;
       font-weight: 500;
@@ -110,8 +109,8 @@
           display: flex; 
           width: 100%;
           height: max-content;
-          color: black !important;
           font-size: 35px;
+          color: black !important;
           justify-content: center;
         }
   
@@ -143,9 +142,13 @@
 /* landing section of home.jsx */
 
 .land{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
-  height: 40em;
-  overflow-x: hidden;
+  height:max-content;
+  padding: 5% 0;
   background-size: 100% 100%;
   background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
   background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),
@@ -153,6 +156,55 @@
   radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),
   radial-gradient(99% 99% at 21% 78%, rgb(255, 7, 189) 0%, #073AFF00 100%),
   radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+  .land-text{
+    display: flex;
+    background-color: transparent;
+    color: white !important;
+    width: 45%;
+    height: max-content;
+    flex-direction: column;
+    gap: 2.5vh;
+  }
+  .land-cols{
+    display: flex;
+    background-color: transparent;
+    width: 45%;
+    height: max-content;
+    align-items: center;
+    %box{
+      display: flex;
+      background-color: #ffffff;
+      width: 25%;
+      height: 25em;
+      border: 1px solid rgb(0, 0, 0);
+    }
+
+    .box1{
+      @extend %box;
+      height: 21em;
+    }
+    .box2{
+      @extend %box;
+    }
+    .box3{
+      @extend %box;
+      height: 16em;
+    }
+    .box4{
+      @extend %box;
+      height: 20em;
+    }
+  }
+  @media (max-width:740px){
+    .land-text{
+      width: 70%;
+      margin: 5% 0;
+      font-size: 13px;
+    }
+    .land-cols{
+      width: 65%;
+    }
+  }
 }
 
 .line{
