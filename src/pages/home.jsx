@@ -1,13 +1,14 @@
 import React from 'react';
 import Navigation from '../components/navigation';
 import Landing from '../components/landing';
+import Header from '../components/header';
 
 function Home() {
   return (
     <div>
-      <Navigation/>
+      <Header/>
       <Landing/>
-      <h1>Home Page</h1>
+      <Navigation/>
     </div>
   );
 }

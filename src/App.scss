@@ -69,7 +69,7 @@
   
       .bar {
         display: block;
-        width: 5.5vw;
+        width: 2em;
         height: 6px;
         margin: 6px auto;
         transition: all 0.4s ease-in-out;
@@ -103,18 +103,18 @@
         visibility: hidden;
         border-radius: 30px;
         flex-direction: column !important;
-        background-color: #F46197;
+        background-color: #FAFAFA;
         width: 80%;
         height: max-content;
         text-align: center;
         opacity: 0%;
-        border: 2px solid #001524;
+        border: 3px solid #001524;
         transition: .75s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   
         .nav-link {
           display: flex; 
           width: 100%;
-          height: 100%;
+          height: max-content;
           color: black !important;
           justify-content: center;
         }
@@ -124,8 +124,16 @@
           margin: 5vh 10%;
           opacity: 100%;
           font-size: 20px;
-          overflow: hidden;
         }
+      }
+    }
+
+    @media (max-width: 320px) {
+      .gavipic {
+        display: none;
+      }
+      .company-name{
+        font-size: 15px;
       }
     }
   }
@@ -133,8 +141,46 @@
 /* landing section of home.jsx */
 
 .land{
-  background-color: black;
+  width: 100%;
+  height: 35em;
+  overflow-x: hidden;
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),
+  repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),
+  radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),
+  radial-gradient(99% 99% at 21% 78%, #FF00E1FF 0%, #073AFF00 100%),
+  radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+}
+
+.line{
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  background-color: #001524;
+}
+
+.line2{
   width: 90%;
-  height: 65vh;
-  margin: 5%;
+  height: 10px;
+  top:30px;
+  position: absolute;
+  background-color: #001524;
+}
+
+.line3{
+  width: 75%;
+  height: 10px;
+  top:50px;
+  position: absolute;
+  background-color: #001524;
+}
+
+.line4{
+  width: 60%;
+  height: 10px;
+  top:70px;
+  position: absolute;
+  background-color: #001524;
 }

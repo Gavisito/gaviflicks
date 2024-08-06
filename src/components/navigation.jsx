@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 function Navigation() {
@@ -26,9 +27,9 @@ function Navigation() {
               </div>
             </div>
             <div className={`nav ${isMenuOpen ? 'active' : ''}`}>
-              <div className="nav-link"  onClick={handleNavLinkClick}>About</div>
-              <div className="nav-link" onClick={handleNavLinkClick}>Projects</div>
-              <div className="nav-link" onClick={handleNavLinkClick}>Contact</div>
+                <NavLink to="/" className="nav-link" onClick={handleNavLinkClick}>Home</NavLink>
+                <NavLink to="/about" className="nav-link" onClick={handleNavLinkClick}>About</NavLink>
+                <NavLink to="/gallery" className="nav-link" onClick={handleNavLinkClick}>Gallery</NavLink>
             </div>
             <div className={`ham-icon ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
               <span className="bar"></span>
