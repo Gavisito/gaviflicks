@@ -3,6 +3,7 @@ import { createClient } from 'contentful';
 import { config } from '../../config';
 
 import Navigation from '../components/navigation';
+import Header from '../components/header';
 
 
 function Gallery() {
@@ -24,13 +25,16 @@ function Gallery() {
       });
   }, []);
   return (
-    <div id="images">
-      {imageCollection.map((image) => (
-        <div key={image.sys.id}>
-          <img src={'https:' + image.fields.file.url} alt={image.fields.title || 'Mystery Image'} />
-        </div>
-      ))}
+    <div>
+      <Header/>
       <Navigation/>
+      <div id="images">
+        {imageCollection.map((image) => (
+          <div key={image.sys.id}>
+            <img src={'https:' + image.fields.file.url} alt={image.fields.title || 'Mystery Image'} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
