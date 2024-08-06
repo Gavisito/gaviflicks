@@ -3,12 +3,13 @@
     min-height: 85px;
     display: flex;
     justify-content: space-between !important;
-    background-color: #001524;
+    background-color: #151E3F;
     align-items: center;
     padding: 0 5vw;
     position:fixed !important; 
     border-radius: 30px;
     margin: 2.5vh 10%;
+    bottom: 0;
 
     .nav {
       display: flex;
@@ -30,7 +31,7 @@
   
       &:hover {
         font-size: 1.6em;
-        color: #FFECD1;
+        color: #F46197;
         font-weight: bolder;
         font-size: 25px;
       }
@@ -53,7 +54,7 @@
       &:hover {
         font-size: 25px;
         cursor: pointer;
-        color: #FFECD1 !important;
+        color: #F46197 !important;
         margin: 1vh 0;
         font-weight: bolder;
       }
@@ -95,10 +96,11 @@
         margin: -30vh 10%;
         right: 0;
         top:80px;
+        padding: 3%;
         visibility: hidden;
         border-radius: 30px;
         flex-direction: column !important;
-        background-color: #FFECD1;
+        background-color: #F46197;
         width: 80%;
         height: max-content;
         text-align: center;
@@ -117,9 +119,9 @@
         &.active {
           visibility: visible;
           margin: 5vh 10%;
-          padding: 5%;
           opacity: 100%;
           font-size: 20px;
+          overflow: hidden;
         }
       }
     }
