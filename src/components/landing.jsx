@@ -56,9 +56,9 @@ function Landing() {
                   className={`box${index + 1}`}
                   style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
                 >
-                  <text>
+                  <div>
                     <h2 className='imgtitle'>{image.fields.title || 'No title here'}</h2>
-                  </text>
+                  </div>
                 </div>
               ))}
             </>
