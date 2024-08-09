@@ -21,7 +21,7 @@ function Gallery() {
         setImageCollection(response.items); 
       })
       .catch((error) => {
-        console.error('Oops! Something went wrong fetching images:', error);
+        console.error('Fetching Error:', error);
       });
   }, []);
   return (

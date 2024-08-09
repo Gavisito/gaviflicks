@@ -177,12 +177,29 @@
       width: 25%;
       height: 25em;
       border: 1px solid rgb(0, 0, 0);
+      align-items: center;
+      justify-content: center;
+      font-weight: bolder;
+      background-size: 100% 100%, cover;
+      transition: width 0.5s ease-in, height 0.6s ease-in; 
+      .imgtitle{
+        display: none;
+      }
+      &:hover{
+        width: 150em;
+        color: white;
+        height: 30em;
+        .imgtitle{
+          display: block !important;
+        }
+      }
     }
 
     .box1{
       @extend %box;
       height: 21em;
-    }
+      }
+    
     .box2{
       @extend %box;
     }
@@ -258,5 +275,5 @@
 
 .homecontent{
   width: 100%;
-  height: 37.5em;
-}
+  height: fit-content;
+  padding: 2.5% 0;}
