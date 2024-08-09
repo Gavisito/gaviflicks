@@ -185,8 +185,11 @@
       font-weight: bolder;
       border: 3.5px solid white;
       background-size: 100% 100%, cover;
-      transition: width 0.5s ease-in, height 0.6s ease-in; 
+      transition: width 0.5s ease-in, height 0.6s ease-in, background-blend-mode 3s cubic-bezier(0.165, 0.84, 0.44, 1); 
       .imgtitle{
+        display: none;
+      }
+      .imgdesc{
         display: none;
       }
       &:hover{
@@ -198,12 +201,15 @@
         border-color: white;
         &::after{
           content: '.jpg';
-          bottom: 15px;
+          bottom:10px;
           position: relative;
           color: red;
         }
 
         .imgtitle{
+          display: block !important;
+        }
+        .imgdesc{
           display: block !important;
         }
       }
@@ -254,7 +260,8 @@
     %box{
       height: 15em;
       &:hover{
-        height: 23em;
+        width: 50em;
+        height: 30em;
         border-width: 10px 10px 30px 10px;
         font-size: 12px;
       }

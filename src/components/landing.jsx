@@ -6,6 +6,7 @@ function Landing() {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
+
     const contentfulClient = createClient({
       space: config.contentful.space,
       environment: config.contentful.environment,
