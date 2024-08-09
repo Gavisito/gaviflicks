@@ -28,7 +28,7 @@ function Landing() {
         setImages(filteredImages);
       })
       .catch((error) => {
-        console.error('Oops! Something went wrong fetching images:', error);
+        console.error('Fetching Error:', error);
       });
   }, []);
 

@@ -173,6 +173,15 @@
   width: 150em;
   color: white;
   height: 30em;
+  border-width: 15px 15px 75px 15px;
+  border-style: solid;
+  border-color: white;
+}
+.land .land-cols .box4:hover::after, .land .land-cols .box3:hover::after, .land .land-cols .box2:hover::after, .land .land-cols .box1:hover::after {
+  content: ".jpg";
+  bottom: 15px;
+  position: relative;
+  color: red;
 }
 .land .land-cols .box4:hover .imgtitle, .land .land-cols .box3:hover .imgtitle, .land .land-cols .box2:hover .imgtitle, .land .land-cols .box1:hover .imgtitle {
   display: block !important;

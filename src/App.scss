@@ -189,6 +189,16 @@
         width: 150em;
         color: white;
         height: 30em;
+        border-width:15px 15px 75px 15px;
+        border-style: solid;
+        border-color: white;
+        &::after{
+          content: '.jpg';
+          bottom: 15px;
+          position: relative;
+          color: red;
+        }
+
         .imgtitle{
           display: block !important;
         }
