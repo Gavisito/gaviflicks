@@ -210,7 +210,7 @@
   .land .land-text {
     width: 70%;
     margin: 5% 0;
-    font-size: 13px;
+    font-size: 15px;
   }
   .land .land-cols {
     margin-top: 5%;
@@ -294,11 +294,6 @@
 }
 
 .homecontent {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.homecontent .quote-comm {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
