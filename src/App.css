@@ -24,14 +24,12 @@
   flex-direction: row;
 }
 .navigation .company-name {
-  font-size: 20px;
+  font-size: clamp(20px, 2vw, 25px);
   padding-left: 0.5em;
   transition: 0.7s;
 }
 .navigation .company-name:hover {
-  font-size: 1.6em;
-  font-weight: bolder;
-  font-size: 25px;
+  font-size: 30px;
 }
 .navigation .gavipic {
   width: 3em;
@@ -42,11 +40,11 @@
 .navigation .nav-link {
   transition: 0.5s ease;
   cursor: pointer;
-  font-size: 20px;
+  font-size: clamp(20px, 2vw, 25px);
   font-weight: 500;
 }
 .navigation .nav-link:hover {
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
   margin: 1vh 0;
   font-weight: bolder;
@@ -141,11 +139,11 @@
   display: flex;
   background-color: transparent;
   color: white !important;
-  width: 45%;
+  width: 40%;
   height: -moz-max-content;
   height: max-content;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 16px;
   gap: 2.5vh;
 }
 .land .land-cols {
@@ -168,6 +166,7 @@
   font-weight: bolder;
   border: 3.5px solid white;
   background-size: 100% 100%, cover;
+  z-index: 1;
   transition: width 0.5s ease-in, height 0.6s ease-in, background-blend-mode 3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .land .land-cols .box4 .imgtitle, .land .land-cols .box3 .imgtitle, .land .land-cols .box2 .imgtitle, .land .land-cols .box1 .imgtitle {
@@ -183,6 +182,8 @@
   border-width: 15px 15px 75px 15px;
   border-style: solid;
   border-color: white;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  z-index: 5;
 }
 .land .land-cols .box4:hover::after, .land .land-cols .box3:hover::after, .land .land-cols .box2:hover::after, .land .land-cols .box1:hover::after {
   content: ".jpg";
@@ -242,10 +243,9 @@
 
 .line {
   width: 100%;
-  height: 12px;
-  position: absolute;
-  top: 10px;
+  height: 15px;
   background-color: #1b1b1b;
+  margin: 1em 0;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line:hover {
@@ -254,10 +254,9 @@
 
 .line2 {
   width: 90%;
-  height: 12px;
-  top: 30px;
-  position: absolute;
+  height: 15px;
   background-color: #1b1b1b;
+  margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line2:hover {
@@ -266,10 +265,9 @@
 
 .line3 {
   width: 75%;
-  height: 12px;
-  top: 50px;
-  position: absolute;
+  height: 15px;
   background-color: #1b1b1b;
+  margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line3:hover {
@@ -278,21 +276,13 @@
 
 .line4 {
   width: 60%;
-  height: 12px;
-  top: 70px;
-  position: absolute;
+  height: 15px;
   background-color: #1b1b1b;
+  margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line4:hover {
-  background-color: 0C9FFFF;
-}
-
-.homecontent {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 2.5% 0;
+  background-color: #00c9ff;
 }
 
 .Xlayer {
@@ -301,4 +291,15 @@
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: repeating-linear-gradient(315deg, #1a1a1a 92%, rgba(13, 13, 13, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(43, 43, 43, 0.0705882353) 30%, rgba(13, 13, 13, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #3a3a3a 0%, rgba(13, 13, 13, 0) 100%), radial-gradient(99% 99% at 21% 78%, #4d4d4d 0%, rgba(13, 13, 13, 0) 100%), radial-gradient(160% 154% at 711px -303px, #595959 0%, #0d0d0d 100%);
+}
+
+.homecontent {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.homecontent .quote-comm {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=App.css.map */

@@ -11,7 +11,7 @@ function Footer() {
           <Xlayer/>
           <Fnavi/>
           <div className='b-footer'>
-            <h2>Created by Anthony Gavidia-Vasquez @2024</h2>
+            <h2>© 2024 Anthony Gavidia-Vasquez. All rights reserved.</h2>
           </div>
           
         </footer>

@@ -12,7 +12,7 @@ function Header() {
           <div className='line4'></div>
         </div>
         <div className='col2'>
-          <h1>GaviFlicks</h1>
+          <h1>Gavi Flicks</h1>
         </div>
       </header>
     </div>
