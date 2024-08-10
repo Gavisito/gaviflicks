@@ -23,7 +23,7 @@ function Navigation() {
                 </a>
               </div>
               <div>
-                <a href="#home" className={`company-name ${isMenuOpen ? 'active' : ''}`}>Gavi Flicks</a>
+                <a href="#home" className={`company-name ${isMenuOpen ? 'active' : ''}`}>GaviFlicks</a>
               </div>
             </div>
             <div className={`nav ${isMenuOpen ? 'active' : ''}`}>

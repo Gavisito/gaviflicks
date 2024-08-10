@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from 'contentful';
 import { config } from '../../config';
-
+import Footer from '../components/footer';
 import Navigation from '../components/navigation';
-import Header from '../components/header';
 
 
 function Gallery() {
@@ -26,7 +25,6 @@ function Gallery() {
   }, []);
   return (
     <div>
-      <Header/>
       <Navigation/>
       <div id="images">
         {imageCollection.map((image) => (
@@ -35,6 +33,7 @@ function Gallery() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }
