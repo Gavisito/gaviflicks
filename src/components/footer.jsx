@@ -1,12 +1,13 @@
 import React from 'react';
+import Header from './header';
 
 function Footer() {
   return (
-    <div>
+    <>
         <footer>
-
+          <Header/>
         </footer>
-    </div>
+    </>
   );
 }
 

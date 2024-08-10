@@ -9,7 +9,6 @@ import HomeContent from '../components/homecontent';
 function Home() {
   return (
     <div>
-      <Header/>
       <Navigation/>
       <Landing/>
       <HomeContent/>
