@@ -40,6 +40,11 @@ body {
   flex-direction: column;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -84,9 +89,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 3% 0;
-  border-top: 20px solid black;
-  border-bottom: 20px solid black;
+  border-top: 15px solid black;
+  border-bottom: 15px solid black;
 }
 
 .col1 {

@@ -1,7 +1,7 @@
 /*# navigation section */
 .navigation {
     width: 100%;
-    min-height: 85px;
+    min-height: 10dvh;
     display: flex;
     justify-content: space-between !important;
     align-items: center;
@@ -16,6 +16,7 @@
       align-items: center;
       gap: 25px;
       z-index: 9999;
+      
     }
   
     .branding {
@@ -96,8 +97,8 @@
         flex-direction: column !important;
         background-color: #FAFAFA;
         width: 100%;
-        padding-top: 10%;
-        height: 100vh;
+        padding-top: 5%;
+        height: 100lvh;
         text-align: center;
         opacity: 0%;
         border: 3px solid #001524;
@@ -117,6 +118,7 @@
           margin: 0 0;
           opacity: 100%;
           font-size: 20px;
+          overflow-y: scroll;
         }
       }
     }
@@ -188,13 +190,10 @@
       .imgtitle{
         display: none;
       }
-      .imgdesc{
-        display: none;
-      }
       &:hover{
-        width: 160em;
+        width: 100em;
         color: white;
-        height: 60vh;
+        height: 30em;
         border-width:15px 15px 75px 15px;
         border-style: solid;
         border-color: white;
@@ -332,5 +331,40 @@
 .homecontent{
   width: 100%;
   height: fit-content;
+  padding: 2%;
+  .intro-title{
+    width: 100%;
+    font-size: clamp(40px, 2.5vw, 60px);
+  }
+  .intro{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .profileimg{
+      width: 40em;
+      height: 27em;
+      background-size: 100% 100%, cover;
+      border-color: white;
+      box-shadow: 2px 2px 5px black;
+      border-style: solid;
+      border-width: 10px 10px 50px 10px;
 
+    }
+    .intro-text{
+      width: 60em;
+      height: max-content;
+      font-size: clamp(12.5px, 2vw, 25px);
+    }
+    @media (max-width:700px){
+      .intro-text{
+        width: 50%;
+      }
+      .profileimg{
+        width: 50%;
+        height: 20em;
+      }
+    }
+  }
 }

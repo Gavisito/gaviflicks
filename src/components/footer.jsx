@@ -12,6 +12,7 @@ function Footer() {
           <Fnavi/>
           <div className='b-footer'>
             <h2>© 2024 Anthony Gavidia-Vasquez. All rights reserved.</h2>
+            <h3>Powered by Contentful CMS</h3>
           </div>
         </footer>
     </>
