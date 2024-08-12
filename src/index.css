@@ -105,9 +105,10 @@ header {
   width: -moz-max-content;
   width: max-content;
   word-wrap: break-word;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: 1rem;
   height: -moz-max-content;
   height: max-content;
+  align-items: center;
   margin: 0 2.5%;
   background-color: #ffffff;
   transition: color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);

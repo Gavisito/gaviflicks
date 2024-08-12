@@ -187,7 +187,7 @@
       &:hover{
         width: 70em;
         color: white;
-        height: 30em;
+        height: 32em;
         border-width:15px 15px 30px 15px;
         border-style: solid;
         border-color: white;
@@ -262,9 +262,9 @@
 
 .line{
   width: 100%;
-  height: 2dvh;
+  height: 1rem;
   background-color: #1b1b1b;
-  margin: 1em 0;
+  margin: 1rem 0;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover{
     background-color:#00C9FFFF;
@@ -273,9 +273,9 @@
 
 .line2{
   width: 90%;
-  height: 2dvh;
+  height: 1rem;
   background-color: #1b1b1b;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover{
     background-color:#00C9FFFF;
@@ -284,9 +284,9 @@
 
 .line3{
   width: 75%;
-  height: 2dvh;
+  height: 1rem;
   background-color: #1b1b1b;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover{
     background-color:#00C9FFFF;
@@ -295,9 +295,9 @@
 
 .line4{
   width: 60%;
-  height: 2dvh;
+  height: 1rem;
   background-color: #1b1b1b;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover{
     background-color:#00C9FFFF;
@@ -331,22 +331,21 @@
     height: fit-content;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 1rem;
     .hcboxes{
-      width: 30vw;
-      height: 60lvh;
+      width: 500px;
+      height: 500px;
+      padding: 1%;
       margin: auto;
       overflow: scroll;
-      border: 5px dashed black;
       .profileimg{
-        width: 90%;
-        height: 30dvh;
-        margin: 0 5%;
+        width: 100%;
+        height: 450px;
         background-size: 100% 100%, cover;
         border-color: white;
         box-shadow: 2px 2px 5px black;
         border-style: solid;
-        border-width: 10px 10px 50px 10px;
+        border-width: 10px 10px 30px 10px;
       }
     }
     @media (max-width: 770px) {
@@ -364,7 +363,7 @@
     .intro-text{
       width: 55%;
       height: max-content;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
   @media (max-width:770px){
