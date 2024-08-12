@@ -1,7 +1,7 @@
 /*# navigation section */
 .navigation {
     width: 100%;
-    min-height: 10dvh;
+    min-height: 80px;
     display: flex;
     justify-content: space-between !important;
     align-items: center;
@@ -27,12 +27,12 @@
     }
   
     .company-name {
-      font-size: clamp(20px, 2vw, 25px);
+      font-size: 1rem;
       padding-left: 0.5em;
       transition: 0.7s;
   
       &:hover {
-        font-size: 30px;
+        cursor: pointer;
       }
     }
   
@@ -46,14 +46,12 @@
     .nav-link {
       transition: 0.5s ease;
       cursor: pointer;
-      font-size: clamp(20px, 2vw, 25px);
+      font-size: 1rem;
       font-weight: 500;
   
       &:hover {
-        font-size: 30px;
+        transform: scale(1.25);
         cursor: pointer;
-        margin: 1vh 0;
-        font-weight: bolder;
       }
     }
   
@@ -93,12 +91,13 @@
         margin: 0 0;
         right: 0;
         top:100%;
+        overflow-y: scroll;
         visibility: hidden;
         flex-direction: column !important;
         background-color: #FAFAFA;
         width: 100%;
         padding-top: 5%;
-        height: 100lvh;
+        height: 100vh;
         text-align: center;
         opacity: 0%;
         border: 3px solid #001524;
@@ -108,7 +107,7 @@
           display: flex; 
           width: 100%;
           height: max-content;
-          font-size: 35px;
+          font-size: 1.5rem;
           color: black !important;
           justify-content: center;
         }
@@ -117,7 +116,7 @@
           visibility: visible;
           margin: 0 0;
           opacity: 100%;
-          font-size: 20px;
+          font-size: 1.5rem;
           overflow-y: scroll;
         }
       }
@@ -133,9 +132,6 @@
       .gavipic {
         display: none;
       }
-      .company-name{
-        font-size: 10vw;
-      }
     }
   }
 
@@ -148,7 +144,6 @@
   flex-wrap: wrap;
   width: 100%;
   height:max-content;
-  min-height: 35em;
   padding: 10% 0;
   background-size: 100% 100%;
   background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
@@ -164,12 +159,11 @@
     width: 40%;
     height: max-content;
     flex-direction: column;
-    font-size: 16px;
-    gap: 2.5vh;
+    font-size: 1rem;
+    gap: 1rem;
   }
   .land-cols{
     display: flex;
-    background-color: transparent;
     width: 45%;
     height: max-content;
     align-items: center;
@@ -177,7 +171,7 @@
       display: flex;
       background-color: #ffffff;
       width: 25%;
-      height: 50dvh;
+      height: 25em;
       min-height: 5em;
       border: 1px solid rgb(0, 0, 0);
       align-items: center;
@@ -191,14 +185,13 @@
         display: none;
       }
       &:hover{
-        width: 100em;
+        width: 70em;
         color: white;
-        height: 55dvh;
-        border-width:15px 15px 75px 15px;
+        height: 30em;
+        border-width:15px 15px 30px 15px;
         border-style: solid;
         border-color: white;
         box-shadow: 2px 2px 10px rgb(0, 0, 0);
-        z-index: 5;
         &::after{
           content: '.jpg';
           bottom:10px;
@@ -217,36 +210,42 @@
 
     .box1{
       @extend %box;
-      height: 40dvh;
-      }
-    
+      height: 21em;
+    }
     .box2{
       @extend %box;
     }
     .box3{
       @extend %box;
-      height: 35dvh;
+      height: 16em;
     }
     .box4{
       @extend %box;
-      height: 45dvh;
+      height: 20em;
     }
   }
   @media (max-width:875px){
     .land-text{
       width: 70%;
       margin: 5% 0;
-      font-size: 15px;
     }
     .land-cols{
       margin-top: 5%;
       width: 65%;
     }
+    %box{
+      height: 15em;
+      &:hover{
+        width: 30em;
+        height: 25em;
+        border-width: 10px 10px 30px 10px;
+        font-size: 13px;
+      }
+    }
   }
   @media (max-width:700px){
     .land-text{
       width: 80%;
-      font-size: 13px;
     }
     .land-cols{
       width: 80%;
@@ -256,15 +255,6 @@
   @media (max-width:500px){
     .land-cols{
       width: 90%;
-    }
-    %box{
-      height: 15dvh;
-      &:hover{
-        width: 50em;
-        height: 30dvh;
-        border-width: 10px 10px 30px 10px;
-        font-size: 12px;
-      }
     }
   }
 
@@ -334,7 +324,7 @@
   padding: 5%;
   .intro-title{
     width: 100%;
-    font-size: clamp(50px, 8vw, 200px);
+    font-size: 5rem;
   }
   .intro{
     width: 100%;
@@ -374,7 +364,7 @@
     .intro-text{
       width: 55%;
       height: max-content;
-      font-size: clamp(12.5px, 2vw, 25px);
+      font-size: 1.5rem;
     }
   }
   @media (max-width:770px){

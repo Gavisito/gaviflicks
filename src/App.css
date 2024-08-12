@@ -1,7 +1,7 @@
 /*# navigation section */
 .navigation {
   width: 100%;
-  min-height: 10dvh;
+  min-height: 80px;
   display: flex;
   justify-content: space-between !important;
   align-items: center;
@@ -24,12 +24,12 @@
   flex-direction: row;
 }
 .navigation .company-name {
-  font-size: clamp(20px, 2vw, 25px);
+  font-size: 1rem;
   padding-left: 0.5em;
   transition: 0.7s;
 }
 .navigation .company-name:hover {
-  font-size: 30px;
+  cursor: pointer;
 }
 .navigation .gavipic {
   width: 3em;
@@ -40,14 +40,12 @@
 .navigation .nav-link {
   transition: 0.5s ease;
   cursor: pointer;
-  font-size: clamp(20px, 2vw, 25px);
+  font-size: 1rem;
   font-weight: 500;
 }
 .navigation .nav-link:hover {
-  font-size: 30px;
+  transform: scale(1.25);
   cursor: pointer;
-  margin: 1vh 0;
-  font-weight: bolder;
 }
 .navigation .ham-icon {
   display: none;
@@ -79,12 +77,13 @@
     margin: 0 0;
     right: 0;
     top: 100%;
+    overflow-y: scroll;
     visibility: hidden;
     flex-direction: column !important;
     background-color: #FAFAFA;
     width: 100%;
     padding-top: 5%;
-    height: 100lvh;
+    height: 100vh;
     text-align: center;
     opacity: 0%;
     border: 3px solid #001524;
@@ -95,7 +94,7 @@
     width: 100%;
     height: -moz-max-content;
     height: max-content;
-    font-size: 35px;
+    font-size: 1.5rem;
     color: black !important;
     justify-content: center;
   }
@@ -103,7 +102,7 @@
     visibility: visible;
     margin: 0 0;
     opacity: 100%;
-    font-size: 20px;
+    font-size: 1.5rem;
     overflow-y: scroll;
   }
 }
@@ -116,9 +115,6 @@
   .navigation .gavipic {
     display: none;
   }
-  .navigation .company-name {
-    font-size: 10vw;
-  }
 }
 
 /* landing section of home.jsx */
@@ -130,7 +126,6 @@
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  min-height: 35em;
   padding: 10% 0;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
@@ -144,12 +139,11 @@
   height: -moz-max-content;
   height: max-content;
   flex-direction: column;
-  font-size: 16px;
-  gap: 2.5vh;
+  font-size: 1rem;
+  gap: 1rem;
 }
 .land .land-cols {
   display: flex;
-  background-color: transparent;
   width: 45%;
   height: -moz-max-content;
   height: max-content;
@@ -159,7 +153,7 @@
   display: flex;
   background-color: #ffffff;
   width: 25%;
-  height: 50dvh;
+  height: 25em;
   min-height: 5em;
   border: 1px solid rgb(0, 0, 0);
   align-items: center;
@@ -174,14 +168,13 @@
   display: none;
 }
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
-  width: 100em;
+  width: 70em;
   color: white;
-  height: 55dvh;
-  border-width: 15px 15px 75px 15px;
+  height: 30em;
+  border-width: 15px 15px 30px 15px;
   border-style: solid;
   border-color: white;
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  z-index: 5;
 }
 .land .land-cols .box4:hover::after, .land .land-cols .box3:hover::after, .land .land-cols .box2:hover::after, .land .land-cols .box1:hover::after {
   content: ".jpg";
@@ -196,29 +189,36 @@
   display: block !important;
 }
 .land .land-cols .box1 {
-  height: 40dvh;
+  height: 21em;
 }
 .land .land-cols .box3 {
-  height: 35dvh;
+  height: 16em;
 }
 .land .land-cols .box4 {
-  height: 45dvh;
+  height: 20em;
 }
 @media (max-width: 875px) {
   .land .land-text {
     width: 70%;
     margin: 5% 0;
-    font-size: 15px;
   }
   .land .land-cols {
     margin-top: 5%;
     width: 65%;
   }
+  .land .land-cols .box1, .land .land-cols .box2, .land .land-cols .box3, .land .land-cols .box4 {
+    height: 15em;
+  }
+  .land .land-cols .box1:hover, .land .land-cols .box2:hover, .land .land-cols .box3:hover, .land .land-cols .box4:hover {
+    width: 30em;
+    height: 25em;
+    border-width: 10px 10px 30px 10px;
+    font-size: 13px;
+  }
 }
 @media (max-width: 700px) {
   .land .land-text {
     width: 80%;
-    font-size: 13px;
   }
   .land .land-cols {
     width: 80%;
@@ -227,15 +227,6 @@
 @media (max-width: 500px) {
   .land .land-cols {
     width: 90%;
-  }
-  .land .land-cols .box1, .land .land-cols .box2, .land .land-cols .box3, .land .land-cols .box4 {
-    height: 15dvh;
-  }
-  .land .land-cols .box1:hover, .land .land-cols .box2:hover, .land .land-cols .box3:hover, .land .land-cols .box4:hover {
-    width: 50em;
-    height: 30dvh;
-    border-width: 10px 10px 30px 10px;
-    font-size: 12px;
   }
 }
 
@@ -299,7 +290,7 @@
 }
 .homecontent .intro-title {
   width: 100%;
-  font-size: clamp(50px, 8vw, 200px);
+  font-size: 5rem;
 }
 .homecontent .intro {
   width: 100%;
@@ -343,7 +334,7 @@
   width: 55%;
   height: -moz-max-content;
   height: max-content;
-  font-size: clamp(12.5px, 2vw, 25px);
+  font-size: 1.5rem;
 }
 @media (max-width: 770px) {
   .homecontent .intro {

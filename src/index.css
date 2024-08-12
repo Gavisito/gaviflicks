@@ -46,7 +46,7 @@ img {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
@@ -56,7 +56,7 @@ button {
   max-width: max-content;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
@@ -89,8 +89,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  border-top: 2dvh solid black;
-  border-bottom: 2dvh solid black;
+  border-top: 1rem solid black;
+  border-bottom: 1rem solid black;
 }
 
 .col1 {
@@ -105,7 +105,7 @@ header {
   width: -moz-max-content;
   width: max-content;
   word-wrap: break-word;
-  font-size: clamp(2dvh, 2vw, 5dvh);
+  font-size: clamp(1rem, 2vw, 3rem);
   height: -moz-max-content;
   height: max-content;
   margin: 0 2.5%;
@@ -132,7 +132,7 @@ footer .f-navigation .f-nav {
   width: 75%;
   margin: 0 12.5%;
   align-items: center;
-  font-size: clamp(15px, 2.5vw, 30px);
+  font-size: 1.5rem;
   color: #1b1b1b;
   justify-content: center;
   display: flex;
@@ -150,7 +150,7 @@ footer .b-footer {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: clamp(7px, 1vw, 20px);
+  font-size: 1rem;
   color: white;
   text-align: center;
 }/*# sourceMappingURL=index.css.map */
