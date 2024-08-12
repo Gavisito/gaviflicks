@@ -9,7 +9,7 @@
     position:sticky !important; 
     top: 0;
     z-index: 9999;
-    background-color: rgb(255, 7, 189);
+    background-color: rgb(114, 7, 255);
 
     .nav {
       display: flex;
@@ -187,7 +187,7 @@
       &:hover{
         width: 70em;
         color: white;
-        height: 32em;
+        height: 27em;
         border-width:15px 15px 30px 15px;
         border-style: solid;
         border-color: white;
@@ -324,12 +324,13 @@
   padding: 5%;
   .intro-title{
     width: 100%;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .intro{
     width: 100%;
     height: fit-content;
     display: flex;
+    margin: auto;
     flex-direction: row;
     gap: 50px;
     .hcboxes{

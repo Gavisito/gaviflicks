@@ -9,7 +9,7 @@
   position: sticky !important;
   top: 0;
   z-index: 9999;
-  background-color: rgb(255, 7, 189);
+  background-color: rgb(114, 7, 255);
 }
 .navigation .nav {
   display: flex;
@@ -170,7 +170,7 @@
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
   width: 70em;
   color: white;
-  height: 32em;
+  height: 27em;
   border-width: 15px 15px 30px 15px;
   border-style: solid;
   border-color: white;
@@ -290,13 +290,14 @@
 }
 .homecontent .intro-title {
   width: 100%;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .homecontent .intro {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
+  margin: auto;
   flex-direction: row;
   gap: 50px;
 }
