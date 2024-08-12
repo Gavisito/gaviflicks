@@ -5,11 +5,11 @@
   display: flex;
   justify-content: space-between !important;
   align-items: center;
-  padding: 0 5vw;
-  position: sticky !important;
+  padding: 0 4vw;
+  position: fixed !important;
   top: 0;
   z-index: 9999;
-  background-color: rgb(114, 7, 255);
+  background-color: transparent;
 }
 .navigation .nav {
   display: flex;
@@ -126,7 +126,7 @@
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  padding: 10% 0;
+  padding: 175px 0;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, rgb(255, 7, 189) 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #2000ff 0%, #073aff 100%);
@@ -199,37 +199,29 @@
 }
 @media (max-width: 875px) {
   .land .land-text {
-    width: 70%;
+    width: 80%;
     margin: 5% 0;
   }
   .land .land-cols {
     margin-top: 5%;
-    width: 65%;
+    width: 80%;
   }
   .land .land-cols .box1, .land .land-cols .box2, .land .land-cols .box3, .land .land-cols .box4 {
     height: 15em;
   }
   .land .land-cols .box1:hover, .land .land-cols .box2:hover, .land .land-cols .box3:hover, .land .land-cols .box4:hover {
-    width: 30em;
-    height: 25em;
+    width: 25em;
+    height: 20em;
     border-width: 10px 10px 30px 10px;
     font-size: 13px;
   }
 }
-@media (max-width: 700px) {
-  .land .land-text {
-    width: 80%;
-  }
-  .land .land-cols {
-    width: 80%;
-  }
-}
-@media (max-width: 500px) {
-  .land .land-cols {
-    width: 90%;
-  }
-}
 
+@media (max-width: 875px) {
+  .land {
+    padding: 6em 0;
+  }
+}
 .line {
   width: 100%;
   height: 1rem;

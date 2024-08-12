@@ -5,11 +5,11 @@
     display: flex;
     justify-content: space-between !important;
     align-items: center;
-    padding: 0 5vw;
-    position:sticky !important; 
+    padding: 0 4vw;
+    position:fixed !important; 
     top: 0;
     z-index: 9999;
-    background-color: rgb(114, 7, 255);
+    background-color: transparent;
 
     .nav {
       display: flex;
@@ -144,7 +144,7 @@
   flex-wrap: wrap;
   width: 100%;
   height:max-content;
-  padding: 10% 0;
+  padding: 175px 0;
   background-size: 100% 100%;
   background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
   background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),
@@ -226,38 +226,28 @@
   }
   @media (max-width:875px){
     .land-text{
-      width: 70%;
+      width: 80%;
       margin: 5% 0;
     }
     .land-cols{
       margin-top: 5%;
-      width: 65%;
+      width: 80%;
     }
     %box{
       height: 15em;
       &:hover{
-        width: 30em;
-        height: 25em;
+        width: 25em;
+        height: 20em;
         border-width: 10px 10px 30px 10px;
         font-size: 13px;
       }
     }
   }
-  @media (max-width:700px){
-    .land-text{
-      width: 80%;
-    }
-    .land-cols{
-      width: 80%;
-    }
-  }
-
-  @media (max-width:500px){
-    .land-cols{
-      width: 90%;
-    }
-  }
-
+}
+@media (max-width:875px){
+.land{
+  padding: 6em 0;
+}
 }
 
 .line{
