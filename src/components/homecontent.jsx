@@ -1,9 +1,9 @@
 import React from 'react';
 
 function HomeContent({ data }) {
-  const titleToInclude = 'Profile2';
+  const titleToInclude = ['Profile', 'Profile2', 'Profile3'];
 
-  const selectimg = data.filter((item) => item.fields.title === titleToInclude);
+  const selectimg = data.filter((item) => titleToInclude.includes(item.fields.title));
 
   return (
     <div className='homecontent'>
@@ -17,14 +17,16 @@ function HomeContent({ data }) {
         velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.</p>
-      {selectimg.map((image) => (
-          <img
-            key={image.sys.id}
-            className='profileimg'
-            style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
-            aria-label={image.fields.title}
-          />
-        ))}
+        <div className='hcboxes'>
+          {selectimg.map((image) => (
+            <img
+              key={image.sys.id}
+              className='profileimg'
+              style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
+              aria-label={image.fields.title}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

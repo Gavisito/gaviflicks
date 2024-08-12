@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Landing({data}) {
-    const titleToExclude = 'Profile2';
+    const titleToExclude = ['Profile', 'Profile2', 'Profile3'];
 
-    const selectimg = data.filter((item) => item.fields.title !== titleToExclude).slice(0,4);
+    const selectimg =  data.filter((item) => !titleToExclude.includes(item.fields.title));
   return (
     <div>
       <div className='land'>

@@ -177,7 +177,7 @@
       display: flex;
       background-color: #ffffff;
       width: 25%;
-      height: 25em;
+      height: 50dvh;
       min-height: 5em;
       border: 1px solid rgb(0, 0, 0);
       align-items: center;
@@ -193,7 +193,7 @@
       &:hover{
         width: 100em;
         color: white;
-        height: 30em;
+        height: 55dvh;
         border-width:15px 15px 75px 15px;
         border-style: solid;
         border-color: white;
@@ -217,7 +217,7 @@
 
     .box1{
       @extend %box;
-      height: 21em;
+      height: 40dvh;
       }
     
     .box2{
@@ -225,11 +225,11 @@
     }
     .box3{
       @extend %box;
-      height: 16em;
+      height: 35dvh;
     }
     .box4{
       @extend %box;
-      height: 20em;
+      height: 45dvh;
     }
   }
   @media (max-width:875px){
@@ -258,10 +258,10 @@
       width: 90%;
     }
     %box{
-      height: 15em;
+      height: 15dvh;
       &:hover{
         width: 50em;
-        height: 30em;
+        height: 30dvh;
         border-width: 10px 10px 30px 10px;
         font-size: 12px;
       }
@@ -272,7 +272,7 @@
 
 .line{
   width: 100%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin: 1em 0;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -283,7 +283,7 @@
 
 .line2{
   width: 90%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -294,7 +294,7 @@
 
 .line3{
   width: 75%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -305,7 +305,7 @@
 
 .line4{
   width: 60%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -316,7 +316,7 @@
 
 .Xlayer{
   width: 100%;
-  height:20px;
+  height: 2dvh;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: 
@@ -331,39 +331,57 @@
 .homecontent{
   width: 100%;
   height: fit-content;
-  padding: 2%;
+  padding: 5%;
   .intro-title{
     width: 100%;
-    font-size: clamp(40px, 2.5vw, 60px);
+    font-size: clamp(50px, 8vw, 200px);
   }
   .intro{
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    .profileimg{
-      width: 40em;
-      height: 27em;
-      background-size: 100% 100%, cover;
-      border-color: white;
-      box-shadow: 2px 2px 5px black;
-      border-style: solid;
-      border-width: 10px 10px 50px 10px;
-
+    gap: 50px;
+    .hcboxes{
+      width: 30vw;
+      height: 60lvh;
+      margin: auto;
+      overflow: scroll;
+      border: 5px dashed black;
+      .profileimg{
+        width: 90%;
+        height: 30dvh;
+        margin: 0 5%;
+        background-size: 100% 100%, cover;
+        border-color: white;
+        box-shadow: 2px 2px 5px black;
+        border-style: solid;
+        border-width: 10px 10px 50px 10px;
+      }
+    }
+    @media (max-width: 770px) {
+      .hcboxes {
+        width: 100%;
+        height: max-content;
+        overflow-x: scroll; 
+        display: flex;
+        flex-direction: row;
+      }
+      .profileimg {
+        flex-shrink: 0;
+      }
     }
     .intro-text{
-      width: 60em;
+      width: 55%;
       height: max-content;
       font-size: clamp(12.5px, 2vw, 25px);
     }
-    @media (max-width:700px){
+  }
+  @media (max-width:770px){
+    .intro{
+      flex-direction: column;
       .intro-text{
-        width: 50%;
-      }
-      .profileimg{
-        width: 50%;
-        height: 20em;
+        width: 100%;
       }
     }
   }

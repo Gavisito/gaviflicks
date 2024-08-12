@@ -89,8 +89,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  border-top: 15px solid black;
-  border-bottom: 15px solid black;
+  border-top: 2dvh solid black;
+  border-bottom: 2dvh solid black;
 }
 
 .col1 {
@@ -105,7 +105,7 @@ header {
   width: -moz-max-content;
   width: max-content;
   word-wrap: break-word;
-  font-size: clamp(13px, 2vw, 50px);
+  font-size: clamp(2dvh, 2vw, 5dvh);
   height: -moz-max-content;
   height: max-content;
   margin: 0 2.5%;

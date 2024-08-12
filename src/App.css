@@ -159,7 +159,7 @@
   display: flex;
   background-color: #ffffff;
   width: 25%;
-  height: 25em;
+  height: 50dvh;
   min-height: 5em;
   border: 1px solid rgb(0, 0, 0);
   align-items: center;
@@ -176,7 +176,7 @@
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
   width: 100em;
   color: white;
-  height: 30em;
+  height: 55dvh;
   border-width: 15px 15px 75px 15px;
   border-style: solid;
   border-color: white;
@@ -196,13 +196,13 @@
   display: block !important;
 }
 .land .land-cols .box1 {
-  height: 21em;
+  height: 40dvh;
 }
 .land .land-cols .box3 {
-  height: 16em;
+  height: 35dvh;
 }
 .land .land-cols .box4 {
-  height: 20em;
+  height: 45dvh;
 }
 @media (max-width: 875px) {
   .land .land-text {
@@ -229,11 +229,11 @@
     width: 90%;
   }
   .land .land-cols .box1, .land .land-cols .box2, .land .land-cols .box3, .land .land-cols .box4 {
-    height: 15em;
+    height: 15dvh;
   }
   .land .land-cols .box1:hover, .land .land-cols .box2:hover, .land .land-cols .box3:hover, .land .land-cols .box4:hover {
     width: 50em;
-    height: 30em;
+    height: 30dvh;
     border-width: 10px 10px 30px 10px;
     font-size: 12px;
   }
@@ -241,7 +241,7 @@
 
 .line {
   width: 100%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin: 1em 0;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -252,7 +252,7 @@
 
 .line2 {
   width: 90%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -263,7 +263,7 @@
 
 .line3 {
   width: 75%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -274,7 +274,7 @@
 
 .line4 {
   width: 60%;
-  height: 15px;
+  height: 2dvh;
   background-color: #1b1b1b;
   margin-bottom: 1em;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -285,7 +285,7 @@
 
 .Xlayer {
   width: 100%;
-  height: 20px;
+  height: 2dvh;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: repeating-linear-gradient(315deg, #1a1a1a 92%, rgba(13, 13, 13, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(43, 43, 43, 0.0705882353) 30%, rgba(13, 13, 13, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #3a3a3a 0%, rgba(13, 13, 13, 0) 100%), radial-gradient(99% 99% at 21% 78%, #4d4d4d 0%, rgba(13, 13, 13, 0) 100%), radial-gradient(160% 154% at 711px -303px, #595959 0%, #0d0d0d 100%);
@@ -295,11 +295,11 @@
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 2%;
+  padding: 5%;
 }
 .homecontent .intro-title {
   width: 100%;
-  font-size: clamp(40px, 2.5vw, 60px);
+  font-size: clamp(50px, 8vw, 200px);
 }
 .homecontent .intro {
   width: 100%;
@@ -307,29 +307,49 @@
   height: fit-content;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 50px;
 }
-.homecontent .intro .profileimg {
-  width: 40em;
-  height: 27em;
+.homecontent .intro .hcboxes {
+  width: 30vw;
+  height: 60lvh;
+  margin: auto;
+  overflow: scroll;
+  border: 5px dashed black;
+}
+.homecontent .intro .hcboxes .profileimg {
+  width: 90%;
+  height: 30dvh;
+  margin: 0 5%;
   background-size: 100% 100%, cover;
   border-color: white;
   box-shadow: 2px 2px 5px black;
   border-style: solid;
   border-width: 10px 10px 50px 10px;
 }
+@media (max-width: 770px) {
+  .homecontent .intro .hcboxes {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+  }
+  .homecontent .intro .profileimg {
+    flex-shrink: 0;
+  }
+}
 .homecontent .intro .intro-text {
-  width: 60em;
+  width: 55%;
   height: -moz-max-content;
   height: max-content;
   font-size: clamp(12.5px, 2vw, 25px);
 }
-@media (max-width: 700px) {
-  .homecontent .intro .intro-text {
-    width: 50%;
+@media (max-width: 770px) {
+  .homecontent .intro {
+    flex-direction: column;
   }
-  .homecontent .intro .profileimg {
-    width: 50%;
-    height: 20em;
+  .homecontent .intro .intro-text {
+    width: 100%;
   }
 }/*# sourceMappingURL=App.css.map */
