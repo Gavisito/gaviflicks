@@ -144,6 +144,7 @@ footer {
   height: -moz-max-content;
   height: max-content;
   background-color: rgb(24, 24, 24);
+  border-top-right-radius: 20%;
 }
 footer .f-navigation {
   width: 100%;
