@@ -18,11 +18,6 @@ function Navigation() {
           <>
             <div className="branding">
               <div>
-                <a href="#home" className="company-logo">
-                  <img src="/portrait.jpg" className={`gavipic ${isMenuOpen ? 'active' : ''}`} alt="Logo" />
-                </a>
-              </div>
-              <div>
                 <a href="#home" className={`company-name ${isMenuOpen ? 'active' : ''}`}>GaviFlicks</a>
               </div>
             </div>

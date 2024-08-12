@@ -19,11 +19,12 @@ function HomeContent({ data }) {
         mollit anim id est laborum.</p>
         <div className='hcboxes'>
           {selectimg.map((image) => (
-            <img
+            <div
               key={image.sys.id}
               className='profileimg'
               style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
               aria-label={image.fields.title}
+              role='img'
             />
           ))}
         </div>

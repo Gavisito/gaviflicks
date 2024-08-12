@@ -36,13 +36,6 @@
       }
     }
   
-    .gavipic {
-      width: 3em;
-      height: 40px;
-      margin-top: 5px;
-      border-radius: 50%;
-    }
-  
     .nav-link {
       transition: 0.5s ease;
       cursor: pointer;
@@ -127,12 +120,6 @@
         top: 80px !important;
       }
     }
-
-    @media (max-width: 215px) {
-      .gavipic {
-        display: none;
-      }
-    }
   }
 
 /* landing section of home.jsx */
@@ -171,15 +158,14 @@
       display: flex;
       background-color: #ffffff;
       width: 25%;
-      height: 25em;
+      height: 20em;
       min-height: 5em;
-      border: 1px solid rgb(0, 0, 0);
       align-items: center;
       justify-content: center;
-      font-weight: bolder;
-      border: 3.5px solid white;
       background-size: 100% 100%, cover;
-      z-index: 1;
+      border-width:3px;
+      border-style: solid;
+      border-color: white;
       transition: width 0.5s ease-in, height 0.6s ease-in, background-blend-mode 3s cubic-bezier(0.165, 0.84, 0.44, 1); 
       .imgtitle{
         display: none;
@@ -188,23 +174,6 @@
         width: 70em;
         color: white;
         height: 27em;
-        border-width:15px 15px 30px 15px;
-        border-style: solid;
-        border-color: white;
-        box-shadow: 2px 2px 10px rgb(0, 0, 0);
-        &::after{
-          content: '.jpg';
-          bottom:10px;
-          position: relative;
-          color: red;
-        }
-
-        .imgtitle{
-          display: block !important;
-        }
-        .imgdesc{
-          display: block !important;
-        }
       }
     }
 
@@ -231,15 +200,13 @@
     }
     .land-cols{
       margin-top: 5%;
-      width: 80%;
+      width: 90%;
     }
     %box{
-      height: 15em;
+      width: 22em;
+      height: 40dvw;
       &:hover{
-        width: 25em;
-        height: 20em;
-        border-width: 10px 10px 30px 10px;
-        font-size: 13px;
+        height: 40dvw;
       }
     }
   }

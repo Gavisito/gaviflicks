@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Landing({data}) {
+    const navigate = useNavigate();
     const titleToExclude = ['Profile', 'Profile2', 'Profile3'];
 
     const selectimg =  data.filter((item) => !titleToExclude.includes(item.fields.title));
@@ -19,10 +20,11 @@ function Landing({data}) {
             works I have taken in this hobby of mine. I hope you enjoy the photos in the gallery
              as much as I do!</p>
           <p>Take care, <br/>Anthony</p>
-          <button>
-              <Link to="/gallery">
-                <p>View Gallery</p>
-              </Link>
+          <button
+            className="button-link"
+            onClick={() => navigate('/gallery')}
+          >
+            View Gallery
           </button>
         </div>
         <div className='land-cols' style={{justifyContent:'center'}}>
@@ -34,10 +36,9 @@ function Landing({data}) {
                   className={`box${index + 1}`}
                   style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
                   aria-label={image.fields.title}
+                  role="img"
                 >
-                  <div>
-                    <h2 className='imgtitle'>{image.fields.title || 'No title here'}</h2>
-                  </div>
+                  <span className="sr-only">{image.fields.title}</span>
                 </div>
               ))}
             </>
