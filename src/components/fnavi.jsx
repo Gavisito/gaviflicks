@@ -7,8 +7,8 @@ function Fnavi() {
           <div className='f-navigation'>
             <div className='f-nav'>
                 <Link to="/" className="nav-link">Home</Link>
-                <Link to="/about" className='nav-link'><p>About</p></Link>
-                <Link to="/gallery" className='nav-link'><p>Gallery</p></Link>
+                <Link to="/about" className='nav-link'>About</Link>
+                <Link to="/gallery" className='nav-link'>Gallery</Link>
             </div>
           </div>
     </>

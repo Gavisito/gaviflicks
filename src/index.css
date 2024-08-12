@@ -144,9 +144,6 @@ footer .f-navigation .f-nav {
   gap: 30px;
   flex-wrap: wrap;
 }
-footer .f-navigation .f-nav .nav-link {
-  display: inline;
-}
 footer .f-navigation .f-nav .nav-link:hover {
   color: #F46197;
   transform: scale(1.25);
@@ -155,7 +152,7 @@ footer .b-footer {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: white;
   text-align: center;
 }/*# sourceMappingURL=index.css.map */
