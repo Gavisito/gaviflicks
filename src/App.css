@@ -261,10 +261,10 @@
   display: flex;
   margin: auto;
   flex-direction: row;
-  gap: 50px;
+  gap: 25px;
 }
 .homecontent .intro .hcboxes {
-  width: 400px;
+  width: 330px;
   height: 450px;
   margin: auto;
   overflow-y: scroll;
@@ -273,8 +273,8 @@
   box-shadow: 2px 2px 13px 2px black;
 }
 .homecontent .intro .hcboxes .profileimg {
-  width: 400px;
-  height: 400px;
+  width: 330px;
+  height: 290px;
   background-size: 100% 100%, cover;
 }
 @media (max-width: 770px) {
@@ -294,7 +294,7 @@
   width: 55%;
   height: -moz-max-content;
   height: max-content;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 @media (max-width: 770px) {
   .homecontent .intro {

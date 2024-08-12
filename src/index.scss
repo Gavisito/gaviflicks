@@ -146,7 +146,7 @@ footer{
       width: 75%;
       margin: 0 12.5%;
       align-items: center;
-      font-size: 1.5rem;
+      font-size: 1.05rem;
       color: #1b1b1b;
       justify-content: center;
       display: flex;
@@ -163,8 +163,9 @@ footer{
   .b-footer{
     width: 100%;
     height: fit-content;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     color: white;
+    padding: 1vh;
     text-align: center;
   }
 }
