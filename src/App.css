@@ -171,7 +171,7 @@
 }
 @media (max-width: 875px) {
   .land .land-text {
-    width: 80%;
+    width: 90%;
     margin: 5% 0;
   }
   .land .land-cols {
@@ -252,7 +252,7 @@
 }
 .homecontent .intro-title {
   width: 100%;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .homecontent .intro {
   width: 100%;
@@ -276,6 +276,7 @@
   width: 330px;
   height: 290px;
   background-size: 100% 100%, cover;
+  background-color: rgb(98, 0, 255);
 }
 @media (max-width: 770px) {
   .homecontent .intro .hcboxes {
@@ -295,6 +296,12 @@
   height: -moz-max-content;
   height: max-content;
   font-size: 1.1rem;
+  padding: 20px;
+  margin-top: 1.5vh;
+  border: 5px solid black;
+  text-wrap: wrap;
+  border-radius: 35px 15px 80px 15px;
+  border: 8px solid black;
 }
 @media (max-width: 770px) {
   .homecontent .intro {
