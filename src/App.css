@@ -110,11 +110,11 @@
 .land {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   height: -moz-max-content;
   height: max-content;
+  justify-content: space-evenly;
   padding: 175px 0;
   background-size: 100% 100%;
   border-bottom-left-radius: 35px;
@@ -126,7 +126,7 @@
   display: flex;
   background-color: transparent;
   color: white !important;
-  width: 40%;
+  width: 35%;
   height: -moz-max-content;
   height: max-content;
   flex-direction: column;
@@ -135,7 +135,7 @@
 }
 .land .land-cols {
   display: flex;
-  width: 45%;
+  width: 50%;
   height: -moz-max-content;
   height: max-content;
   align-items: center;
@@ -172,7 +172,7 @@
 .land .land-cols .box4 {
   height: 20em;
 }
-@media (max-width: 875px) {
+@media (max-width: 900px) {
   .land .land-text {
     width: 90%;
     margin: 5% 0;
@@ -198,7 +198,7 @@
 .line {
   width: 100%;
   height: 1rem;
-  background-color: #1b1b1b;
+  background-color: rgb(98, 0, 255);
   margin: 1rem 0;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -220,7 +220,7 @@
 .line3 {
   width: 75%;
   height: 1rem;
-  background-color: #1b1b1b;
+  background-color: rgb(98, 0, 255);
   margin-bottom: 1rem;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -251,6 +251,7 @@
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
+  margin: 1vh 0;
 }
 .homecontent .intro-title {
   width: 100%;
@@ -290,7 +291,7 @@
   }
   .homecontent .intro .hcboxes .profileimg {
     width: 100%;
-    height: 620px;
+    height: 610px;
     background-size: 100% 100%, cover;
     background-color: rgb(255, 255, 255);
   }
@@ -329,7 +330,7 @@
 }
 @media (max-width: 900px) {
   .homecontent .intro {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .homecontent .intro .intro-text {
     width: 100%;

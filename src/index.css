@@ -136,7 +136,7 @@ header {
   transition: color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .col2:hover {
-  color: rgb(255, 7, 189);
+  color: rgb(98, 0, 255);
 }
 
 footer {
@@ -164,7 +164,6 @@ footer .f-navigation .f-nav {
   flex-wrap: wrap;
 }
 footer .f-navigation .f-nav .nav-link:hover {
-  color: #F46197;
   transform: scale(1.25);
 }
 footer .b-footer {

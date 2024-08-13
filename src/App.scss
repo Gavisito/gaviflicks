@@ -127,10 +127,10 @@
 .land{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   height:max-content;
+  justify-content: space-evenly;
   padding: 175px 0;
   background-size: 100% 100%;
   border-bottom-left-radius: 35px;
@@ -145,7 +145,7 @@
     display: flex;
     background-color: transparent;
     color: white !important;
-    width: 40%;
+    width: 35%;
     height: max-content;
     flex-direction: column;
     font-size: 1rem;
@@ -153,7 +153,7 @@
   }
   .land-cols{
     display: flex;
-    width: 45%;
+    width: 50%;
     height: max-content;
     align-items: center;
     %box{
@@ -196,7 +196,7 @@
       height: 20em;
     }
   }
-  @media (max-width:875px){
+  @media (max-width:900px){
     .land-text{
       width: 90%;
       margin: 5% 0;
@@ -223,7 +223,7 @@
 .line{
   width: 100%;
   height: 1rem;
-  background-color: #1b1b1b;
+  background-color: rgb(98, 0, 255);
   margin: 1rem 0;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover{
@@ -245,7 +245,7 @@
 .line3{
   width: 75%;
   height: 1rem;
-  background-color: #1b1b1b;
+  background-color: rgb(98, 0, 255);
   margin-bottom: 1rem;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover{
@@ -281,6 +281,7 @@
 .homecontent{
   width: 100%;
   height: fit-content;
+  margin: 1vh 0;
 
   .intro-title{
     width: 100%;
@@ -317,7 +318,7 @@
         height: 500px;
         .profileimg{
           width: 100%;
-          height: 620px;
+          height: 610px;
           background-size: 100% 100%, cover;
           background-color: rgb(255, 255, 255);
         }
@@ -357,7 +358,7 @@
   }
   @media (max-width:900px){
     .intro{
-      flex-direction: column;
+      flex-direction: column-reverse;
       .intro-text{
         width: 100%;
       }

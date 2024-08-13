@@ -20,12 +20,6 @@ function Landing({data}) {
             works I have taken in this hobby of mine. I hope you enjoy the photos in the gallery
              as much as I do!</p>
           <p>Take care, <br/>Anthony</p>
-          <button
-            className="button-link"
-            onClick={() => navigate('/gallery')}
-          >
-            View Gallery
-          </button>
         </div>
         <div className='land-cols' style={{justifyContent:'center'}}>
         {selectimg.length > 0 ? (

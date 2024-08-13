@@ -21,7 +21,14 @@ function HomeContent({ data }) {
                 mollit anim id est laborum.
                 
                 </p>
+                <button
+            className="button-link"
+            onClick={() => navigate('/gallery')}
+          >
+            View Gallery
+          </button>
           </div>
+
         <div className='hcboxes'>
           {selectimg.map((image) => (
             <div
