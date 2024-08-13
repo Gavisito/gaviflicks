@@ -131,7 +131,7 @@
   width: 100%;
   height:max-content;
   justify-content: space-evenly;
-  padding: 175px 0;
+  padding: 150px 0;
   background-size: 100% 100%;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
@@ -203,13 +203,16 @@
     }
     .land-cols{
       margin-top: 5%;
-      width: 90%;
+      width: 100%;
+      flex-wrap: wrap;
     }
     %box{
-      width: 22em;
+      width: 40%;
       height: 40dvw;
       &:hover{
-        height: 40dvw;
+        width: 50%;
+        height: 60dvw;
+        border: 5px solid white
       }
     }
   }
@@ -293,7 +296,7 @@
     display: flex;
     margin: auto;
     flex-direction: row;
-    gap: 25px;
+    gap: 50px;
     padding: 5%;
     border-radius: 35px 15px 80px 15px;
     .hcboxes{
@@ -349,9 +352,9 @@
       }
     }
     .intro-text{
-      width: 60%;
+      width: 70%;
       height: max-content;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-wrap:wrap;
       background-color: white;
     }
@@ -359,6 +362,7 @@
   @media (max-width:900px){
     .intro{
       flex-direction: column-reverse;
+      gap: 20px;
       .intro-text{
         width: 100%;
       }
