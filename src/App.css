@@ -9,7 +9,7 @@
   position: fixed !important;
   top: 0;
   z-index: 9999;
-  background-color: transparent;
+  background-color: rgb(34, 35, 68);
   transition: background-color 0.3s ease-in-out;
 }
 .navigation .nav {
@@ -120,8 +120,7 @@
   background-size: 100% 100%;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, rgb(255, 7, 189) 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #2000ff 0%, #073aff 100%);
+  background-color: rgb(34, 35, 68);
 }
 .land .land-text {
   display: flex;
@@ -202,12 +201,12 @@
 .line {
   width: 100%;
   height: 1rem;
-  background-color: rgb(98, 0, 255);
+  background-color: rgb(34, 35, 68);
   margin: 1rem 0;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line:hover {
-  background-color: #00c9ff;
+  background-color: rgb(192, 106, 133);
 }
 
 .line2 {
@@ -218,18 +217,18 @@
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line2:hover {
-  background-color: #00c9ff;
+  background-color: rgb(192, 106, 133);
 }
 
 .line3 {
   width: 75%;
   height: 1rem;
-  background-color: rgb(98, 0, 255);
+  background-color: rgb(34, 35, 68);
   margin-bottom: 1rem;
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line3:hover {
-  background-color: #00c9ff;
+  background-color: rgb(192, 106, 133);
 }
 
 .line4 {
@@ -240,7 +239,7 @@
   transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .line4:hover {
-  background-color: #00c9ff;
+  background-color: rgb(192, 106, 133);
 }
 
 .Xlayer {
@@ -260,6 +259,7 @@
 .homecontent .intro-title {
   width: 100%;
   font-size: 3.5rem;
+  color: black;
 }
 .homecontent .intro {
   width: 100%;

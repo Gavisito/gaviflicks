@@ -7,22 +7,11 @@ function Navigation() {
 
     const toggleMenu = () => {
       setMenuOpen((prevState) => !prevState);
-      const navbar = document.querySelector('.navigation');
-      navbar.style.backgroundColor = 'rgb(98, 0, 255)';
     };
   
     const handleNavLinkClick = () => {
       setMenuOpen(false);
     };
-
-    window.addEventListener('scroll', function() {
-      const navbar = document.querySelector('.navigation');
-      if (window.scrollY > 0) {
-          navbar.style.backgroundColor = 'rgb(98, 0, 255)';
-      } else {
-          navbar.style.backgroundColor = 'transparent';
-      }
-  });
 
     return (
         <div className="navigation">

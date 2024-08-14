@@ -23,9 +23,9 @@ function Home() {
     contentfulClient.getAssets()
       .then((response) => {
         const specificImageTitles = [
-          'Profile',
-          'Profile2',
-          'Profile3',
+          "Cloudy Nights",
+          'Grace Mandarin',
+          'Night Outlook',
           "Cupid's Messenger",
           'Vampy Nights',
           'Moonlight View',

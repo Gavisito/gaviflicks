@@ -1,7 +1,7 @@
 import React from 'react';
 
 function HomeContent({ data }) {
-  const titleToInclude = ['Profile', 'Profile2', 'Profile3'];
+  const titleToInclude = ['Snowy Nights', 'Night Outlook', "Cupid's Messenger"];
 
   const selectimg = data.filter((item) => titleToInclude.includes(item.fields.title));
 
