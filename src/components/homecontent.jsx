@@ -23,9 +23,9 @@ function HomeContent({ data }) {
                 </p>
                 <button
             className="button-link"
-            onClick={() => navigate('/gallery')}
+            onClick={() => navigate('/about')}
           >
-            View Gallery
+            Learn Me
           </button>
           </div>
 
