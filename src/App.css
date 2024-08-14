@@ -174,8 +174,8 @@
 }
 @media (max-width: 900px) {
   .land .land-text {
-    width: 90%;
-    margin: 5% 0;
+    width: 80%;
+    margin: 5vh 0;
   }
   .land .land-cols {
     margin-top: 5%;
@@ -334,8 +334,9 @@
 }
 @media (max-width: 900px) {
   .homecontent .intro {
-    flex-direction: column-reverse;
-    gap: 20px;
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 60px;
   }
   .homecontent .intro .intro-text {
     width: 100%;

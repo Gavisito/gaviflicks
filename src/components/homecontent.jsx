@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function HomeContent({ data }) {
+  const navigate = useNavigate();
+  
   const titleToInclude = ['Snowy Nights', 'Night Outlook', "Cupid's Messenger"];
 
   const selectimg = data.filter((item) => titleToInclude.includes(item.fields.title));
