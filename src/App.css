@@ -1,7 +1,8 @@
 /*# navigation section */
 .navigation {
   width: 100%;
-  min-height: 80px;
+  min-height: 5em;
+  height: 5em;
   display: flex;
   justify-content: space-between !important;
   align-items: center;
@@ -14,9 +15,8 @@
 }
 .navigation .nav {
   display: flex;
-  align-items: center;
-  gap: 25px;
   z-index: 9999;
+  gap: 25px;
 }
 .navigation .branding {
   text-align: center;
@@ -25,7 +25,7 @@
   flex-direction: row;
 }
 .navigation .company-name {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-left: 0.5em;
   transition: 0.7s;
 }
@@ -35,11 +35,11 @@
 .navigation .nav-link {
   transition: 0.5s ease;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 .navigation .nav-link:hover {
-  transform: scale(1.25);
+  transform: scale(1.1);
   cursor: pointer;
 }
 .navigation .ham-icon {
@@ -48,7 +48,7 @@
 }
 .navigation .ham-icon .bar {
   display: block;
-  width: 2em;
+  width: 1.7em;
   height: 6px;
   margin: 6px auto;
   transition: all 0.4s ease-in-out;
@@ -68,37 +68,35 @@
     transform: translateY(-15px) rotate(-45deg);
   }
   .navigation .nav {
+    display: flex;
     position: absolute;
     margin: 0 0;
     right: 0;
-    top: 100%;
-    overflow-y: scroll;
+    top: 80px;
     visibility: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     flex-direction: column !important;
     background-color: #FAFAFA;
     width: 100%;
-    padding-top: 5%;
-    height: 100vh;
-    text-align: center;
+    height: 65dvh;
+    padding: 10vh 0;
+    gap: 25px;
     opacity: 0%;
-    border: 3px solid #001524;
     transition: 0.75s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
   .navigation .nav .nav-link {
-    display: flex;
     width: 100%;
     height: -moz-max-content;
     height: max-content;
     font-size: 1.5rem;
+    text-align: center;
     color: black !important;
-    justify-content: center;
   }
   .navigation .nav.active {
     visibility: visible;
-    margin: 0 0;
     opacity: 100%;
-    font-size: 1.5rem;
-    overflow-y: scroll;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 350px) {
