@@ -307,29 +307,31 @@
     }
     @media (max-width: 900px) {
       .hcboxes {
+        display: flex;
+        flex-direction: row;
         width: 75%;
-        height: 400px;
+        height: max-content;
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
         .profileimg{
-          width: 100%;
-          height: 610px;
+          flex-shrink:0;
         }
       }
-    }
-    @media (max-width: 500px) {
-      .hcboxes {
-        width: 85%;
-        height: 325px;
-        .profileimg{
-          width: 100%;
-          height: 370px;
+      @media (max-width: 600px) {
+        .hcboxes {
+          width: 90%;
+          .profileimg{
+            width: 100%;
+            height: 400px;
+          }
         }
       }
-    }
-    @media (max-width: 400px) {
-      .hcboxes {
-        .profileimg{
-          width: 100%;
-          height: 300px;
+      @media (max-width: 450px) {
+        .hcboxes {
+          .profileimg{
+            width: 100%;
+            height: 300px;
+          }
         }
       }
     }
