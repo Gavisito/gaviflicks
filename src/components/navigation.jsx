@@ -23,8 +23,8 @@ function Navigation() {
             </div>
             <div className={`nav ${isMenuOpen ? 'active' : ''}`}>
                 <NavLink to="/" className="nav-link" onClick={handleNavLinkClick}>Home</NavLink>
-                <NavLink to="/about" className="nav-link" onClick={handleNavLinkClick}>About</NavLink>
-                <NavLink to="/gallery" className="nav-link" onClick={handleNavLinkClick}>Gallery</NavLink>
+                <NavLink to="/contact" className="nav-link" onClick={handleNavLinkClick}>Contact Me</NavLink>
+                <NavLink to="/gallery" className="nav-link" onClick={handleNavLinkClick}>My Gallery</NavLink>
             </div>
             <div className={`ham-icon ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
               <span className="bar"></span>
