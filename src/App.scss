@@ -132,10 +132,8 @@
   width: 100%;
   height:max-content;
   justify-content: space-evenly;
-  padding: 150px 0;
+  padding: 150px 0 5em 0;
   background-size: 100% 100%;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
   background-color: rgb(34, 35, 68);
   .land-text{
     display: flex;
@@ -151,24 +149,23 @@
     display: flex;
     width: 50%;
     height: max-content;
-    align-items: center;
+    align-items: end;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 1%;
+    overflow: hidden;
+    justify-content: center;
     %box{
       display: flex;
       background-color: #ffffff;
-      width: 25%;
-      height: 20em;
-      min-height: 5em;
-      align-items: center;
-      justify-content: center;
+      width: 50%;
+      height: 25em;
       background-size: 100% 100%, cover;
       border-width:3px;
       border-style: solid;
       border-color: white;
-      border-radius: 3%;
+      border-radius: 2%;
       transition: width 0.5s ease-in, height 0.6s ease-in, background-blend-mode 3s cubic-bezier(0.165, 0.84, 0.44, 1); 
-      .imgtitle{
-        display: none;
-      }
       &:hover{
         width: 70em;
         color: white;
@@ -194,17 +191,17 @@
   }
   @media (max-width:900px){
     .land-text{
-      width: 80%;
-      margin: 5vh 0;
+      width: 100%;
+      margin:10vh 5vw;
     }
     .land-cols{
-      margin-top: 5%;
       width: 100%;
+      margin: 0 5vw;
       flex-wrap: wrap;
     }
     %box{
-      width: 40%;
-      height: 40dvw;
+      width: 50%;
+      height: 45dvw;
       &:hover{
         width: 50%;
         height: 45dvw;
@@ -281,7 +278,7 @@
   width: 100%;
   height: fit-content;
   margin: 1vh 0;
-
+  padding: 5%;
   .intro-title{
     width: 100%;
     font-size: 2.75rem;
@@ -294,7 +291,6 @@
     margin: auto;
     flex-direction: row;
     gap: 50px;
-    padding: 5%;
     border-radius: 35px 15px 80px 15px;
     .hcboxes{
       width: 400px;
@@ -314,37 +310,29 @@
     }
     @media (max-width: 900px) {
       .hcboxes {
-        width: 100%;
-        height: 500px;
+        width: 75%;
+        height: 400px;
         .profileimg{
           width: 100%;
           height: 610px;
-          background-size: 100% 100%, cover;
-          background-color: rgb(255, 255, 255);
         }
       }
     }
     @media (max-width: 500px) {
       .hcboxes {
-        width: 100%;
-        height: 400px;
+        width: 85%;
+        height: 325px;
         .profileimg{
           width: 100%;
           height: 370px;
-          background-size: 100% 100%, cover;
-          background-color: rgb(255, 255, 255);
         }
       }
     }
     @media (max-width: 400px) {
       .hcboxes {
-        width: 100%;
-        height: 350px;
         .profileimg{
           width: 100%;
           height: 300px;
-          background-size: 100% 100%, cover;
-          background-color: rgb(255, 255, 255);
         }
       }
     }
@@ -353,6 +341,7 @@
       height: max-content;
       font-size: 1.2rem;
       text-wrap:wrap;
+      margin-bottom: 25px;
       background-color: white;
     }
   }
