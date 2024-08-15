@@ -138,7 +138,9 @@
   height: max-content;
   align-items: end;
   background-color: white;
-  border: 3px solid white;
+  border-color: white;
+  border-width: 3px 3px 10px 3px;
+  border-style: solid;
   border-radius: 1%;
   overflow: hidden;
   justify-content: center;
@@ -146,8 +148,8 @@
 .land .land-cols .box4, .land .land-cols .box3, .land .land-cols .box2, .land .land-cols .box1 {
   display: flex;
   background-color: #ffffff;
-  width: 50%;
-  height: 25em;
+  width: 25%;
+  height: 22em;
   background-size: 100% 100%, cover;
   border-width: 3px;
   border-style: solid;
@@ -158,16 +160,6 @@
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
   width: 70em;
   color: white;
-  height: 27em;
-}
-.land .land-cols .box1 {
-  height: 21em;
-}
-.land .land-cols .box3 {
-  height: 16em;
-}
-.land .land-cols .box4 {
-  height: 20em;
 }
 @media (max-width: 900px) {
   .land .land-text {
