@@ -370,7 +370,12 @@
   }
 }
 
-.galleryimg{
-  width: 500px;
-  height: 500px;
+
+.gallerycontent{
+  width: 100%;
+  height: fit-content;
+  .galleryimg{
+    width: 70vw;
+    height: 70vw;
+  }
 }

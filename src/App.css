@@ -341,7 +341,12 @@
   }
 }
 
-.galleryimg {
-  width: 500px;
-  height: 500px;
+.gallerycontent {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.gallerycontent .galleryimg {
+  width: 70vw;
+  height: 70vw;
 }/*# sourceMappingURL=App.css.map */
