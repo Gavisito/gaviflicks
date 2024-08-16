@@ -17,9 +17,8 @@ function HomeContent({ data }) {
               <img
                 key={image.sys.id}
                 className='profileimg'
-                src={'https:' + image.fields.file.url} 
+                src={`https:${image.fields.file.url}?fm=webp&w=500&h=500&q=100`}
                 alt={image.fields.title}
-                loading='lazy'
               />
             ))} 
           </div>

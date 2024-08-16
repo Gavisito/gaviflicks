@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function HCIntroText() {
+  const navigate = useNavigate();
   return (
 
         <div className='intro-text'>
@@ -18,7 +20,7 @@ function HCIntroText() {
                 </p>
                 <button
             className="button-link"
-            onClick={() => navigate('/about')}
+            onClick={() => navigate('/contact')}
           >
             Learn Me
           </button>

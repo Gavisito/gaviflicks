@@ -22,9 +22,8 @@ function Landing({data}) {
             <img
             key={image.sys.id}
             className={`box${index + 1}`}
-            src={'https:' + image.fields.file.url} 
+            src={`https:${image.fields.file.url}?fm=webp&w=400&h=400&q=100`}
             alt={image.fields.title}
-            loading='lazy'
           />
           ))}
         </div>
