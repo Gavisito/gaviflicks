@@ -33,6 +33,7 @@ function Gallery() {
             className='galleryimg'
             src={`https:${image.fields.file.url}?fm=webp&w=500&h=500&q=100`}
             alt={image.fields.title || 'Mystery Image' } 
+            loading='lazy'
              />
           </div>
         ))}
