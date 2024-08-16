@@ -7,7 +7,7 @@
   justify-content: space-between !important;
   align-items: center;
   padding: 0 4vw;
-  position: fixed !important;
+  position: sticky !important;
   top: 0;
   z-index: 9999;
   background-color: rgb(34, 35, 68);
@@ -114,7 +114,7 @@
   height: -moz-max-content;
   height: max-content;
   justify-content: space-evenly;
-  padding: 150px 0 5em 0;
+  padding: 100px 0 5em 0;
   background-size: 100% 100%;
   background-color: rgb(34, 35, 68);
 }
@@ -165,7 +165,7 @@
 @media (max-width: 900px) {
   .land .land-text {
     width: 100%;
-    margin: 10vh 5vw;
+    margin: 5vh 5vw;
   }
   .land .land-cols {
     width: 100%;
