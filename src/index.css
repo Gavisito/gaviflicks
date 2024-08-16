@@ -92,7 +92,7 @@ p {
   margin: auto;
   height: -moz-max-content;
   height: max-content;
-  margin-top: 70px;
+  margin: 30px 0;
 }
 .faq-section details {
   width: 100%;

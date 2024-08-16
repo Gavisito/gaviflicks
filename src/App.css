@@ -201,8 +201,7 @@
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 5vh 0;
-  padding: 2.5%;
+  padding: 5vw;
 }
 .homecontent .intro-text {
   width: 50%;
@@ -298,7 +297,7 @@
 @media (max-width: 950px) {
   .homecontent .intro-title {
     text-align: center;
-    font-size: 2.75rem;
+    margin-top: 1em;
   }
   .homecontent .intro {
     flex-direction: column-reverse;
@@ -307,6 +306,26 @@
   .homecontent .intro .intro-text {
     width: 90%;
     margin: auto;
+  }
+}
+@media (max-width: 700px) {
+  .homecontent .intro-title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .homecontent .intro-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .homecontent .intro-title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .homecontent .intro-title {
+    font-size: 2.25rem;
   }
 }
 
