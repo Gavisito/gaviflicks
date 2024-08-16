@@ -46,6 +46,10 @@ img {
   padding: 0;
 }
 
+img:focus {
+  outline: 2px solid #ff00f7;
+}
+
 h1 {
   font-size: 2.2rem;
   line-height: 1.1;
@@ -98,6 +102,7 @@ p {
   width: 100%;
   border: 3px solid black;
   margin: 20px 0;
+  font-weight: 700;
   border-radius: 10px;
   transition: 0.5s ease-in open;
 }
@@ -105,9 +110,11 @@ p {
   padding: 20px;
   font-size: 1.1rem;
   text-wrap: balance;
+  font-weight: 600 !important;
 }
 .faq-section summary {
   padding: 25px;
+  font-size: 1.15rem;
   transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
 }
 .faq-section details[open] summary {

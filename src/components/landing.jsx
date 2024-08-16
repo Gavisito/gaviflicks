@@ -19,13 +19,20 @@ function Landing({data}) {
         </div>
         <div className='land-cols'>
           {selectimg.map((image, index) => (
-            <img
-            key={image.sys.id}
-            className={`box${index + 1}`}
-            src={`https:${image.fields.file.url}?fm=webp&w=400&h=400&q=100`}
-            alt={image.fields.title}
-            loading='lazy'
-          />
+                <a
+                key={image.sys.id}
+                className={`box${index + 1}`}
+                href={`https:${image.fields.file.url}`}>
+                <img
+                  src={`https:${image.fields.file.url}?fm=webp&w=400&h=400&q=100`}
+                  alt={image.fields.title}
+                  style={{
+                    width:'100%'
+                  }}
+                  loading='lazy'
+                  tabIndex={0}
+                />
+                </a>
           ))}
         </div>
       </div>
