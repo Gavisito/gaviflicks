@@ -26,15 +26,21 @@ function Gallery() {
   return (
     <div>
       <Navigation/>
-      <div id="images">
-        {imageCollection.map((image) => (
-            <img 
+      <div className='gallerycontent'>
+        <div className="gallerycarousel">
+          {imageCollection.map((image) => (
+            <a
+            key={image.sys.id}
             className='galleryimg'
-            src={`https:${image.fields.file.url}?fm=webp&w=500&h=500&q=100`}
-            alt={image.fields.title || 'Mystery Image' } 
-            loading='lazy'
-             />
-        ))}
+            href={`https:${image.fields.file.url}`}>
+            <img
+              src={`https:${image.fields.file.url}?fm=webp&w=400&h=400&q=100`}
+              alt={image.fields.title}
+              loading='lazy'
+            />
+            </a>
+          ))}
+        </div>
       </div>
       <Footer/>
     </div>

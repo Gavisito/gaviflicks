@@ -151,7 +151,7 @@
 .land .land-cols .box4, .land .land-cols .box3, .land .land-cols .box2, .land .land-cols .box1 {
   display: flex;
   background-color: #ffffff;
-  width: 25%;
+  width: 25vw;
   height: 22em;
   border-width: 3px;
   border-style: solid;
@@ -159,8 +159,12 @@
   border-radius: 3%;
   transition: width 0.4s ease-in, height 0.4s ease-in;
 }
+.land .land-cols .box4 img, .land .land-cols .box3 img, .land .land-cols .box2 img, .land .land-cols .box1 img {
+  width: 100%;
+  height: auto;
+}
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
-  width: 20em;
+  width: 70em;
   height: 27em;
   color: white;
 }
@@ -241,9 +245,13 @@
 }
 .homecontent .intro .hcboxes .profileimg {
   width: 100%;
-  height: 450px;
+  height: auto;
   background-size: 100% 100%, cover;
   background-color: rgb(255, 255, 255);
+}
+.homecontent .intro .hcboxes .profileimg img {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 950px) {
   .homecontent .intro .carousel {
@@ -255,13 +263,12 @@
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 550px;
+    height: 560px;
     overflow-x: scroll !important;
     overflow-y: hidden !important;
   }
   .homecontent .intro .hcboxes .profileimg {
     flex-shrink: 0;
-    height: 550px;
   }
 }
 @media (max-width: 950px) and (max-width: 650px) {
@@ -269,26 +276,14 @@
     width: 90%;
     height: 500px;
   }
-  .homecontent .intro .hcboxes .profileimg {
-    width: 100%;
-    height: 500px;
-  }
 }
 @media (max-width: 950px) and (max-width: 510px) {
   .homecontent .intro .hcboxes {
     height: 350px;
   }
-  .homecontent .intro .hcboxes .profileimg {
-    width: 100%;
-    height: 350px;
-  }
 }
 @media (max-width: 950px) and (max-width: 400px) {
   .homecontent .intro .hcboxes {
-    height: 300px;
-  }
-  .homecontent .intro .hcboxes .profileimg {
-    width: 100%;
     height: 300px;
   }
 }
@@ -332,7 +327,20 @@
   height: -moz-fit-content;
   height: fit-content;
 }
-.gallerycontent .galleryimg {
-  width: 70vw;
-  height: 70vw;
+.gallerycontent .gallerycarousel {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 5vh 0;
+}
+.gallerycontent .gallerycarousel .galleryimg {
+  width: 100%;
+  height: auto;
+}
+.gallerycontent .gallerycarousel .galleryimg img {
+  width: 500px;
+  height: 500px;
 }/*# sourceMappingURL=App.css.map */

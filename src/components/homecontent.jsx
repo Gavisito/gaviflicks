@@ -25,12 +25,7 @@ function HomeContent({ data }) {
               <img
                 src={`https:${image.fields.file.url}?fm=webp&w=400&h=400&q=100`}
                 alt={image.fields.title}
-                style={{
-                  width:'100%',
-                  height:'100%'
-                }}
                 loading='lazy'
-                tabIndex={0}
               />
               </a>
             ))} 
