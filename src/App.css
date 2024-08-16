@@ -114,7 +114,7 @@
   height: -moz-max-content;
   height: max-content;
   justify-content: space-evenly;
-  padding: 100px 0 5em 0;
+  padding: 100px 0;
   background-size: 100% 100%;
   background-color: rgb(34, 35, 68);
 }
@@ -127,8 +127,11 @@
   height: max-content;
   flex-direction: column;
   font-size: 1rem;
-  gap: 1rem;
-  text-wrap: pretty;
+  gap: 16px;
+  text-wrap: balance;
+  text-align: start;
+  align-items: start;
+  justify-content: space-around;
 }
 .land .land-cols {
   display: flex;
@@ -162,10 +165,15 @@
   height: 27em;
   color: white;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .land .land-text {
     width: 100%;
-    margin: 5vh 5vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 6em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .land .land-cols {
     width: 100%;
@@ -189,73 +197,22 @@
     padding: 6em 0;
   }
 }
-.line {
-  width: 100%;
-  height: 1rem;
-  background-color: rgb(34, 35, 68);
-  margin: 1rem 0;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.line:hover {
-  background-color: rgb(192, 106, 133);
-}
-
-.line2 {
-  width: 90%;
-  height: 1rem;
-  background-color: #1b1b1b;
-  margin-bottom: 1rem;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.line2:hover {
-  background-color: rgb(192, 106, 133);
-}
-
-.line3 {
-  width: 75%;
-  height: 1rem;
-  background-color: rgb(34, 35, 68);
-  margin-bottom: 1rem;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.line3:hover {
-  background-color: rgb(192, 106, 133);
-}
-
-.line4 {
-  width: 60%;
-  height: 1rem;
-  background-color: #1b1b1b;
-  margin-bottom: 1rem;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.line4:hover {
-  background-color: rgb(192, 106, 133);
-}
-
-.Xlayer {
-  width: 100%;
-  height: 1dvh;
-  background-color: rgb(17, 17, 34);
-}
-
 .homecontent {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 1vh 0;
-  padding: 5%;
+  margin: 5vh 0;
+  padding: 2.5%;
 }
 .homecontent .intro-text {
   width: 50%;
   height: -moz-max-content;
   height: max-content;
   font-size: 1.2rem;
-  text-wrap: pretty;
 }
 .homecontent .intro-title {
   width: 100%;
-  font-size: 2.75rem;
+  font-size: 4rem;
   color: black;
 }
 .homecontent .intro {
@@ -265,7 +222,9 @@
   display: flex;
   margin: auto;
   flex-direction: row;
-  gap: 30px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  padding: 35px 0;
 }
 .homecontent .intro .carousel {
   width: 50%;
@@ -289,7 +248,7 @@
   background-size: 100% 100%, cover;
   background-color: rgb(255, 255, 255);
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .homecontent .intro .carousel {
     width: 100%;
     display: flex;
@@ -308,7 +267,7 @@
     height: 500px;
   }
 }
-@media (max-width: 900px) and (max-width: 650px) {
+@media (max-width: 1000px) and (max-width: 650px) {
   .homecontent .intro .hcboxes {
     width: 90%;
   }
@@ -317,23 +276,26 @@
     height: 450px;
   }
 }
-@media (max-width: 900px) and (max-width: 510px) {
+@media (max-width: 1000px) and (max-width: 510px) {
   .homecontent .intro .hcboxes .profileimg {
     width: 100%;
     height: 350px;
   }
 }
-@media (max-width: 900px) and (max-width: 400px) {
+@media (max-width: 1000px) and (max-width: 400px) {
   .homecontent .intro .hcboxes .profileimg {
     width: 100%;
     height: 300px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .homecontent .intro-title {
+    text-align: center;
+    font-size: 2.75rem;
+  }
   .homecontent .intro {
-    margin-top: 60px;
-    flex-direction: column;
-    gap: 60px;
+    flex-direction: column-reverse;
+    gap: 30px;
   }
   .homecontent .intro .intro-text {
     width: 90%;

@@ -1,5 +1,6 @@
 import React from 'react';
 import HCIntroText from './introtextsection';
+import BasicFAQ from './basicfaq';
 
 function HomeContent({ data }) {
   
@@ -9,6 +10,9 @@ function HomeContent({ data }) {
 
   return (
     <div className='homecontent'>
+      <div>
+        <h2 className='intro-title'>Lorem Ipsum</h2>
+      </div>
       <div className='intro'>
         <HCIntroText/>
         <div className='carousel'>
@@ -25,6 +29,7 @@ function HomeContent({ data }) {
           </div>
         </div>
       </div>
+      <BasicFAQ/>
     </div>
   );
 }

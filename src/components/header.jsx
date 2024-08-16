@@ -11,7 +11,7 @@ function Header() {
           <div className='line4'></div>
         </div>
         <div className='col2'>
-          <h1>GaviFlicks</h1>
+          <h2>GaviFlicks</h2>
         </div>
       </header>
     </div>

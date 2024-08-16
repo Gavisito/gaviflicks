@@ -130,7 +130,7 @@
   width: 100%;
   height:max-content;
   justify-content: space-evenly;
-  padding: 100px 0 5em 0;
+  padding: 100px 0;
   background-size: 100% 100%;
   background-color: rgb(34, 35, 68);
   .land-text{
@@ -141,8 +141,11 @@
     height: max-content;
     flex-direction: column;
     font-size: 1rem;
-    gap: 1rem;
-    text-wrap:pretty;
+    gap: 16px;
+    text-wrap:balance;
+    text-align: start;
+    align-items: start;
+    justify-content: space-around;
   }
   .land-cols{
     display: flex;
@@ -188,10 +191,15 @@
       @extend %box;
     }
   }
-  @media (max-width:900px){
+  @media (max-width:1000px){
     .land-text{
       width: 100%;
-      margin:5vh 5vw;
+      margin-left:7vw;
+      margin-right:7vw;
+      margin-bottom: 6em;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }
     .land-cols{
       width: 100%;
@@ -216,72 +224,21 @@
   }
 }
 
-.line{
-  width: 100%;
-  height: 1rem;
-  background-color: rgb(34, 35, 68);
-  margin: 1rem 0;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  &:hover{
-    background-color:rgb(192, 106, 133);
-  }
-}
-
-.line2{
-  width: 90%;
-  height: 1rem;
-  background-color: #1b1b1b;
-  margin-bottom: 1rem;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  &:hover{
-    background-color:rgb(192, 106, 133);
-  }
-}
-
-.line3{
-  width: 75%;
-  height: 1rem;
-  background-color: rgb(34, 35, 68);
-  margin-bottom: 1rem;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  &:hover{
-    background-color:rgb(192, 106, 133);
-  }
-}
-
-.line4{
-  width: 60%;
-  height: 1rem;
-  background-color: #1b1b1b;
-  margin-bottom: 1rem;
-  transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  &:hover{
-    background-color:rgb(192, 106, 133);
-  }
-}
-
-.Xlayer{
-  width: 100%;
-  height: 1dvh;
-  background-color: rgb(17, 17, 34);
-}
-
 .homecontent{
   width: 100%;
   height: fit-content;
-  margin: 1vh 0;
-  padding: 5%;
+  margin: 5vh 0;
+  padding: 2.5%;
 
   .intro-text{
     width: 50%;
     height: max-content;
     font-size: 1.2rem;
-    text-wrap:pretty;
   }
   
   .intro-title{
     width: 100%;
-    font-size: 2.75rem;
+    font-size: 4rem;
     color:  black;
   }
   .intro{
@@ -290,7 +247,9 @@
     display: flex;
     margin: auto;
     flex-direction: row;
-    gap: 30px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 35px 0;
     .carousel{
       width: 50%;
       max-height: fit-content;
@@ -312,7 +271,7 @@
         background-color: rgb(255, 255, 255);
       }
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       .carousel{
         width: 100%;
         display: flex;
@@ -357,11 +316,14 @@
       }
     }
   }
-  @media (max-width:900px){
+  @media (max-width:1000px){
+    .intro-title{
+      text-align: center;
+      font-size: 2.75rem;
+    }
     .intro{
-      margin-top: 60px;
-      flex-direction: column;
-      gap: 60px;
+      flex-direction: column-reverse;
+      gap: 30px;
       .intro-text{
         width: 90%;
         margin: auto;

@@ -8,7 +8,7 @@ function Landing({data}) {
     <div>
       <div className='land'>
         <div className='land-text'>
-          <h1>The Sky and Myself</h1>
+          <h1 style={{fontSize:'3rem', textWrap:'balance'}}>The Sky and Myself</h1>
           <p>Sometimes, I believe the sky is taken for granted. Of course, it's not intentional. 
             Our lives have become increasingly demanding in our responsibilities that we are not
             able to take a second and admire what is above us. I have created this website to 
