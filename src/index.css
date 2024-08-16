@@ -128,8 +128,7 @@ footer {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  background-color: rgb(24, 24, 24);
-  border-top-right-radius: 20%;
+  background-color: rgb(34, 35, 68);
 }
 footer .f-navigation {
   width: 100%;

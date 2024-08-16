@@ -7,7 +7,6 @@ function Footer() {
   return (
     <>
         <footer>
-          <Header/>
           <Xlayer/>
           <Fnavi/>
           <div className='b-footer'>

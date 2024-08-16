@@ -1,9 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import HCIntroText from './introtextsection';
 
 function HomeContent({ data }) {
-  const navigate = useNavigate();
   
   const titleToInclude = ['Snowy Nights', 'Night Outlook', "Cupid's Messenger"];
 
