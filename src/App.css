@@ -248,7 +248,7 @@
   background-size: 100% 100%, cover;
   background-color: rgb(255, 255, 255);
 }
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   .homecontent .intro .carousel {
     width: 100%;
     display: flex;
@@ -257,38 +257,45 @@
   .homecontent .intro .hcboxes {
     display: flex;
     flex-direction: row;
-    width: 75%;
-    height: auto;
+    width: 80%;
+    height: 550px;
     overflow-x: scroll !important;
     overflow-y: hidden !important;
   }
   .homecontent .intro .hcboxes .profileimg {
     flex-shrink: 0;
-    height: 500px;
+    height: 550px;
   }
 }
-@media (max-width: 1000px) and (max-width: 650px) {
+@media (max-width: 950px) and (max-width: 650px) {
   .homecontent .intro .hcboxes {
     width: 90%;
+    height: 500px;
   }
   .homecontent .intro .hcboxes .profileimg {
     width: 100%;
-    height: 450px;
+    height: 500px;
   }
 }
-@media (max-width: 1000px) and (max-width: 510px) {
+@media (max-width: 950px) and (max-width: 510px) {
+  .homecontent .intro .hcboxes {
+    height: 350px;
+  }
   .homecontent .intro .hcboxes .profileimg {
     width: 100%;
     height: 350px;
   }
 }
-@media (max-width: 1000px) and (max-width: 400px) {
+@media (max-width: 950px) and (max-width: 400px) {
+  .homecontent .intro .hcboxes {
+    height: 300px;
+  }
   .homecontent .intro .hcboxes .profileimg {
     width: 100%;
     height: 300px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   .homecontent .intro-title {
     text-align: center;
     font-size: 2.75rem;

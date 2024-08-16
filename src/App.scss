@@ -271,7 +271,7 @@
         background-color: rgb(255, 255, 255);
       }
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 950px) {
       .carousel{
         width: 100%;
         display: flex;
@@ -280,26 +280,28 @@
       .hcboxes {
         display: flex;
         flex-direction: row;
-        width: 75%;
-        height: auto;
+        width: 80%;
+        height: 550px;
         overflow-x: scroll !important;
         overflow-y: hidden !important;
         .profileimg{
           flex-shrink: 0;
-          height: 500px;
+          height: 550px;
         }
       }
       @media (max-width: 650px) {
         .hcboxes {
           width: 90%;
+          height: 500px;
           .profileimg{
             width: 100%;
-            height: 450px;
+            height: 500px;
           }
         }
       }
       @media (max-width: 510px) {
         .hcboxes {
+          height: 350px;
           .profileimg{
             width: 100%;
             height: 350px;
@@ -308,6 +310,7 @@
       }
       @media (max-width: 400px) {
         .hcboxes {
+          height: 300px;
           .profileimg{
             width: 100%;
             height: 300px;
@@ -316,7 +319,7 @@
       }
     }
   }
-  @media (max-width:1000px){
+  @media (max-width:950px){
     .intro-title{
       text-align: center;
       font-size: 2.75rem;
