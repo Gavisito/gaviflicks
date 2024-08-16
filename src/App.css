@@ -128,6 +128,7 @@
   flex-direction: column;
   font-size: 1rem;
   gap: 1rem;
+  text-wrap: pretty;
 }
 .land .land-cols {
   display: flex;
@@ -243,6 +244,13 @@
   margin: 1vh 0;
   padding: 5%;
 }
+.homecontent .intro-text {
+  width: 50%;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 1.2rem;
+  text-wrap: pretty;
+}
 .homecontent .intro-title {
   width: 100%;
   font-size: 2.75rem;
@@ -317,13 +325,6 @@
     width: 100%;
     height: 300px;
   }
-}
-.homecontent .intro .intro-text {
-  width: 50%;
-  height: -moz-max-content;
-  height: max-content;
-  font-size: 1.2rem;
-  text-wrap: wrap;
 }
 @media (max-width: 900px) {
   .homecontent .intro {

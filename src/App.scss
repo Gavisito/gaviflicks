@@ -142,6 +142,7 @@
     flex-direction: column;
     font-size: 1rem;
     gap: 1rem;
+    text-wrap:pretty;
   }
   .land-cols{
     display: flex;
@@ -268,6 +269,13 @@
   height: fit-content;
   margin: 1vh 0;
   padding: 5%;
+
+  .intro-text{
+    width: 50%;
+    height: max-content;
+    font-size: 1.2rem;
+    text-wrap:pretty;
+  }
   
   .intro-title{
     width: 100%;
@@ -344,12 +352,6 @@
           }
         }
       }
-    }
-    .intro-text{
-      width: 50%;
-      height: max-content;
-      font-size: 1.2rem;
-      text-wrap:wrap;
     }
   }
   @media (max-width:900px){
