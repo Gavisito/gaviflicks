@@ -268,6 +268,7 @@
   height: fit-content;
   margin: 1vh 0;
   padding: 5%;
+  
   .intro-title{
     width: 100%;
     font-size: 2.75rem;
@@ -280,10 +281,15 @@
     margin: auto;
     flex-direction: row;
     gap: 50px;
+    .carousel{
+      width: 50%;
+      max-height: fit-content;
+      display: flex;
+      justify-content: center;
+    }
     .hcboxes{
       width: 400px;
       height: 460px;
-      margin: auto;
       overflow-y: scroll;
       overflow-x: hidden;
       border: 1px solid black;
@@ -297,6 +303,9 @@
       }
     }
     @media (max-width: 900px) {
+      .carousel{
+        width: 100%;
+      }
       .hcboxes {
         display: flex;
         flex-direction: row;
@@ -328,7 +337,7 @@
       }
     }
     .intro-text{
-      width: 70%;
+      width: 50%;
       height: max-content;
       font-size: 1.2rem;
       text-wrap:wrap;

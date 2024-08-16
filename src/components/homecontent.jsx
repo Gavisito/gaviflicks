@@ -11,16 +11,18 @@ function HomeContent({ data }) {
     <div className='homecontent'>
       <div className='intro'>
         <HCIntroText/>
-        <div className='hcboxes'>
-          {selectimg.map((image) => (
-            <div
-              key={image.sys.id}
-              className='profileimg'
-              style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
-              aria-label={image.fields.title}
-              role='img'
-            />
-          ))}
+        <div className='carousel'>
+          <div className='hcboxes'>
+            {selectimg.map((image) => (
+              <div
+                key={image.sys.id}
+                className='profileimg'
+                style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
+                aria-label={image.fields.title}
+                role='img'
+              />
+            ))} 
+          </div>
         </div>
       </div>
     </div>
