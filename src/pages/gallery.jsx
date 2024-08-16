@@ -29,7 +29,9 @@ function Gallery() {
       <div id="images">
         {imageCollection.map((image) => (
           <div key={image.sys.id}>
-            <img src={'https:' + image.fields.file.url} alt={image.fields.title || 'Mystery Image'} />
+            <img src={'https:' + image.fields.file.url} 
+            alt={image.fields.title || 'Mystery Image' } 
+            loading="lazy" />
           </div>
         ))}
       </div>

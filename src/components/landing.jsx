@@ -17,24 +17,16 @@ function Landing({data}) {
             <p>I will share some of my self-portraits as well :D</p>
           <p>Take care, <br/>Anthony</p>
         </div>
-        <div className='land-cols' style={{justifyContent:'center'}}>
-        {selectimg.length > 0 ? (
-            <>
-              {selectimg.map((image, index) => (
-                <div
-                  key={image.sys.id}
-                  className={`box${index + 1}`}
-                  style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
-                  aria-label={image.fields.title}
-                  role="img"
-                >
-                  <span className="sr-only">{image.fields.title}</span>
-                </div>
-              ))}
-            </>
-          ) : (
-            <h1>Loading image...</h1>
-          )}
+        <div className='land-cols'>
+          {selectimg.map((image, index) => (
+            <img
+            key={image.sys.id}
+            className={`box${index + 1}`}
+            src={'https:' + image.fields.file.url} 
+            alt={image.fields.title}
+            loading='lazy'
+          />
+          ))}
         </div>
       </div>
     </div>

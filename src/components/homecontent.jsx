@@ -14,12 +14,12 @@ function HomeContent({ data }) {
         <div className='carousel'>
           <div className='hcboxes'>
             {selectimg.map((image) => (
-              <div
+              <img
                 key={image.sys.id}
                 className='profileimg'
-                style={{ backgroundImage: `url(https:${image.fields.file.url})` }}
-                aria-label={image.fields.title}
-                role='img'
+                src={'https:' + image.fields.file.url} 
+                alt={image.fields.title}
+                loading='lazy'
               />
             ))} 
           </div>
