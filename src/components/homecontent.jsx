@@ -18,13 +18,21 @@ function HomeContent({ data }) {
         <div className='carousel'>
           <div className='hcboxes'>
             {selectimg.map((image) => (
+              <a
+              key={image.sys.id}
+              className='profileimg'
+              href={`https:${image.fields.file.url}`}>
               <img
-                key={image.sys.id}
-                className='profileimg'
-                src={`https:${image.fields.file.url}?fm=webp&w=500&h=500&q=100`}
+                src={`https:${image.fields.file.url}?fm=webp&w=400&h=400&q=100`}
                 alt={image.fields.title}
+                style={{
+                  width:'100%',
+                  height:'100%'
+                }}
                 loading='lazy'
+                tabIndex={0}
               />
+              </a>
             ))} 
           </div>
         </div>
