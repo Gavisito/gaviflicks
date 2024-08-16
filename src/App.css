@@ -155,7 +155,7 @@
   border-color: white;
   position: relative;
   border-radius: 3%;
-  transition: width 0.3s ease-in, height 0.3s ease-in;
+  transition: width 0.4s ease-in, height 0.4s ease-in;
 }
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
   width: 20em;
@@ -171,6 +171,7 @@
     width: 100%;
     margin: 0 5vw;
     flex-wrap: wrap;
+    border-width: 3px;
   }
   .land .land-cols .box1, .land .land-cols .box2, .land .land-cols .box3, .land .land-cols .box4 {
     width: 50%;
@@ -179,7 +180,7 @@
   .land .land-cols .box1:hover, .land .land-cols .box2:hover, .land .land-cols .box3:hover, .land .land-cols .box4:hover {
     width: 50%;
     height: 45dvw;
-    border: 5px solid white;
+    border: 7px solid white;
   }
 }
 
