@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/gallery" element={<Gallery />} />
