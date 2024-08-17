@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ImgPopUP from './imageStyles/imgpopup'
 
 function Landing({data}) {
-    const titleToExclude = ['Night Outlook', 'Snowy Nights', "Cupid's Messenger"];
+  const [selectedImage, setSelectedImage] = useState(null); 
+  const PopupClose = () => {
+    setSelectedImage(null);
+  };
 
-    const selectimg =  data.filter((item) => !titleToExclude.includes(item.fields.title));
+  const titleToExclude = ['Night Outlook', 'Snowy Nights', "Cupid's Messenger"];
+
+  const selectimg =  data.filter((item) => !titleToExclude.includes(item.fields.title));
   return (
     <div>
       <div className='land'>
@@ -19,18 +25,24 @@ function Landing({data}) {
         </div>
         <div className='land-cols'>
           {selectimg.map((image, index) => (
-            <a
+            <div
             key={image.sys.id}
             className={`box${index + 1}`}
-            href={`https:${image.fields.file.url}`} >
+            href={`https:${image.fields.file.url}`} 
+            onClick={() => setSelectedImage({
+              url: image.fields.file.url,
+              title: image.fields.title
+            })}  
+            tabIndex={0}>
             <img
               src={`https:${image.fields.file.url}?fm=webp&w=400&h=400&q=100`}
               alt={image.fields.title}
               loading='lazy'
             />
-            </a>
+            </div>
           ))}
         </div>
+        <ImgPopUP data={selectedImage} onClose={PopupClose}/>
       </div>
     </div>
   );
