@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from 'contentful';
-import { config } from '../../config';
 import Footer from '../components/footer';
 import Navigation from '../components/navigation';
 import ImgPopUP from '../components/imageStyles/imgpopup';
@@ -15,9 +14,9 @@ function Gallery() {
 
   useEffect(() => {
     const contentfulClient = createClient({
-      space: config.contentful.space,
-      environment: config.contentful.environment,
-      accessToken: config.contentful.accessToken
+      space: import.meta.env.VITE_CONTENTFUL_SPACE_ID,
+      environment: import.meta.env.VITE_CONTENTFUL_ENVIRONMENT,
+      accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
     });
 
     contentfulClient.getAssets()

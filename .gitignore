@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 #api keys configrations
-config.js
+.env

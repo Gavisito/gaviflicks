@@ -6,20 +6,17 @@ import HomeContent from '../components/homecontent';
 
 import { useState, useEffect } from 'react';
 import { createClient } from 'contentful';
-import { config } from '../../config';
 
 
 function Home() {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-
     const contentfulClient = createClient({
-      space: config.contentful.space,
-      environment: config.contentful.environment,
-      accessToken: config.contentful.accessToken
+      space: import.meta.env.VITE_CONTENTFUL_SPACE_ID,
+      environment: import.meta.env.VITE_CONTENTFUL_ENVIRONMENT,
+      accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
     });
-
     contentfulClient.getAssets()
       .then((response) => {
         const specificImageTitles = [
