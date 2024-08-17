@@ -16,7 +16,7 @@ function HCIntroText() {
         mollit anim id est laborum.</p>
         <button className="button-link"
         onClick={() => navigate('/contact')}>
-        Learn Me
+        Gallery
         </button>
       </div>
   );

@@ -35,8 +35,12 @@
 .navigation .nav-link {
   transition: 0.5s ease;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navigation .nav-link:hover {
   transform: scale(1.1);
@@ -166,7 +170,7 @@
 }
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
   width: 70em;
-  height: 27em;
+  height: 22em;
   color: white;
 }
 @media (max-width: 1000px) {
@@ -414,6 +418,8 @@
   cursor: pointer;
 }
 .gallerycontent .gallerycarousel .galleryimg img {
-  width: 500px;
+  width: auto;
   height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=App.css.map */

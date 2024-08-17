@@ -40,8 +40,12 @@
     .nav-link {
       transition: 0.5s ease;
       cursor: pointer;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      text-decoration: underline;
       font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items:center;
   
       &:hover {
         transform: scale(1.1);
@@ -178,7 +182,7 @@
       }
       &:hover{
         width:70em;
-        height: 27em;
+        height: 22em;
         color: white;
       }
     }
@@ -273,7 +277,7 @@
         background-size: 100% 100%, cover;
         background-color: rgb(255, 255, 255);
         cursor: pointer;
-        img{                 
+        img{             
           width:100%;
           height:100%;
         }
@@ -437,8 +441,9 @@
       height: auto;
       cursor: pointer;
       img{
-        width: 500px;
+        width: auto;
         height: 500px;
+        object-fit: contain;
       }
     }
   }

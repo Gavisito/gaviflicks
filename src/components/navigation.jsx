@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 function Navigation() {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -23,8 +22,7 @@ function Navigation() {
             </div>
             <div className={`nav ${isMenuOpen ? 'active' : ''}`}>
                 <NavLink to="/" className="nav-link" onClick={handleNavLinkClick}>Home</NavLink>
-                <NavLink to="/contact" className="nav-link" onClick={handleNavLinkClick}>Contact Me</NavLink>
-                <NavLink to="/gallery" className="nav-link" onClick={handleNavLinkClick}>My Gallery</NavLink>
+                <NavLink to="/gallery" className="nav-link" onClick={handleNavLinkClick}>Photography</NavLink>
             </div>
             <div className={`ham-icon ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
               <span className="bar"></span>
