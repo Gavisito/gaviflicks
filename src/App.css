@@ -331,33 +331,29 @@
   z-index: 9998;
   left: 0;
   top: 0;
-  padding: 10em 5%;
+  padding: 5em 5%;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  overflow: scroll;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
 }
 .popup h2 {
   color: black;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 4vw, 4rem);
   margin: 30px 0;
   text-align: center;
 }
-.popup .popup-content {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
 .popup .popup-content .img-popup {
+  float: left;
   width: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.popup .popup-content .popup-text {
-  width: 50%;
+  max-height: 100vh;
+  height: auto;
+  margin-right: 20px;
 }
 .popup .popup-content .popup-text p {
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 3.5vw, 3rem);
+  line-height: 1.6;
+  text-wrap: balance;
 }
 
 .gallerycontent {
