@@ -41,10 +41,8 @@ function Home() {
   }, []);
   return (
     <div>
-      <Navigation/>
       <Landing data={images}/>
-      <HomeContent data={images}/>
-      <Footer/>
+      <HomeContent data={images}/>fire
     </div>
   );
 }

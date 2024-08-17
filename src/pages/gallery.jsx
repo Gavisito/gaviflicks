@@ -29,7 +29,6 @@ function Gallery() {
   }, []);
   return (
     <div>
-      <Navigation/>
       <div className='gallerycontent'>
         <div className="gallerycarousel">
           {imageCollection.map((image) => (
@@ -52,7 +51,6 @@ function Gallery() {
         </div>
         <ImgPopUP data={selectedImage} onClose={PopupClose}/>
       </div>
-      <Footer/>
     </div>
   );
 }
