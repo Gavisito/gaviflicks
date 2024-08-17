@@ -1,4 +1,3 @@
-// ImgPopUP.jsx
 import React from 'react';
 
 function ImgPopUP({ data, onClose }) {
