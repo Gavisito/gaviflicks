@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from 'contentful';
-import Footer from '../components/footer';
-import Navigation from '../components/navigation';
 import ImgPopUP from '../components/imageStyles/imgpopup';
-
 
 function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);

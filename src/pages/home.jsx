@@ -1,7 +1,5 @@
 import React from 'react';
-import Navigation from '../components/navigation';
 import Landing from '../components/landing';
-import Footer from '../components/footer';
 import HomeContent from '../components/homecontent';
 
 import { useState, useEffect } from 'react';
