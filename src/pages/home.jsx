@@ -1,10 +1,8 @@
 import React from 'react';
 import Landing from '../components/landing';
 import HomeContent from '../components/homecontent';
-
 import { useState, useEffect } from 'react';
 import { createClient } from 'contentful';
-
 
 function Home() {
   const [images, setImages] = useState([]);
