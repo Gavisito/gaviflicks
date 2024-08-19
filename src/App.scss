@@ -235,12 +235,11 @@
 .homecontent{
   width: 100%;
   height: fit-content;
-  padding: 5vw;
+  padding: 2vw;
 
   .intro-text{
     width: 50%;
     height: max-content;
-    font-size: 1.2rem;
   }
   
   .intro-title{
@@ -253,7 +252,7 @@
     height: fit-content;
     display: flex;
     margin: auto;
-    flex-direction: row;
+    flex-direction: row-reverse;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     padding: 35px 0;
@@ -261,11 +260,11 @@
       width: 50%;
       max-height: fit-content;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
     .hcboxes{
-      width: 400px;
-      height: 460px;
+      width: 90%;
+      height: 700px;
       overflow-y: scroll;
       overflow-x: hidden;
       border: 1px solid black;
@@ -320,11 +319,11 @@
   }
   @media (max-width:950px){
     .intro-title{
-      text-align: center;
+      text-align: start;
       margin-top: 1em;
     }
     .intro{
-      flex-direction: column-reverse;
+      flex-direction: column;
       gap: 30px;
       .intro-text{
         width: 90%;

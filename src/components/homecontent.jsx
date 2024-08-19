@@ -14,9 +14,6 @@ function HomeContent({ data }) {
 
   return (
     <div className='homecontent'>
-      <div>
-        <h2 className='intro-title'>Lorem Ipsum</h2>
-      </div>
       <div className='intro'>
         <HCIntroText/>
         <div className='carousel'>
@@ -41,7 +38,6 @@ function HomeContent({ data }) {
         </div>
         <ImgPopUP data={selectedImage} onClose={PopupClose}/>
       </div>
-      <BasicFAQ />
     </div>
   );
 }

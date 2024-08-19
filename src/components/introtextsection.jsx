@@ -1,10 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import BasicFAQ from './basicfaq';
+
 
 function HCIntroText() {
   const navigate = useNavigate();
   return (
     <div className='intro-text'>
+      <div>
+        <h2 className='intro-title'>Lorem Ipsum</h2>
+      </div>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -18,6 +23,7 @@ function HCIntroText() {
         onClick={() => navigate('/contact')}>
         Gallery
         </button>
+        <BasicFAQ/>
       </div>
   );
 }

@@ -38,7 +38,7 @@ function Home() {
   return (
     <div>
       <Landing data={images}/>
-      <HomeContent data={images}/>fire
+      <HomeContent data={images}/>
     </div>
   );
 }
