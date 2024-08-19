@@ -8,19 +8,21 @@ function HCIntroText() {
   return (
     <div className='intro-text'>
       <div>
-        <h2 className='intro-title'>Lorem Ipsum</h2>
+        <h2 className='intro-title'>
+          Embracing the Beauty Above: A Tribute to the Sky
+        </h2>
       </div>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate 
-        velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.</p>
-        <button className="button-link"
-        onClick={() => navigate('/contact')}>
+      <p>Sometimes, I believe the sky is taken for granted. Of course, it's not intentional. 
+      Our lives have become increasingly demanding in our responsibilities that we are not
+      able to take a second and admire what is above us. I have created this website to 
+      share the endless ways the sky has demonstrated
+      its beauty to the world for 24 hours a day.</p>
+
+      <p>I will share some of my self-portraits as well :D</p>
+
+      <p>Take care, <br/>Anthony</p>
+      <button className="button-link"
+        onClick={() => navigate('/gallery')}>
         Gallery
         </button>
         <BasicFAQ/>
