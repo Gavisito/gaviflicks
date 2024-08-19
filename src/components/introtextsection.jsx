@@ -8,9 +8,9 @@ function HCIntroText() {
   return (
     <div className='intro-text'>
       <div>
-        <h2 className='intro-title'>
+        <h1 className='intro-title'>
           Embracing the Beauty Above: A Tribute to the Sky
-        </h2>
+        </h1>
       </div>
       <p>Sometimes, I believe the sky is taken for granted. Of course, it's not intentional. 
       Our lives have become increasingly demanding in our responsibilities that we are not

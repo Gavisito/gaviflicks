@@ -41,6 +41,7 @@ body {
   display: flex;
   color: #1b1b1b;
   flex-direction: column;
+  background-color: #FFFAFF;
 }
 img{
   margin: 0;
@@ -61,12 +62,13 @@ h1 {
   width: max-content;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.8em 1.2em;
+  padding: 0.8em 1.5em;
   font-size: 1.25rem;
-  background-color:rgb(77, 27, 91);
+  background-color:#d29fae  ;
   color: #ffffff;
   text-align: center;
   font-weight: bolder;
+  border: 3px solid black;
   cursor: pointer;
   transition: border-color 0.25s;
   margin-top: 1.5rem;
@@ -106,11 +108,9 @@ p{
     summary{
       padding: 25px;
       font-size: 1.15rem;
+      background-color: #896158;
+      color: white;
       transition: .5s ease-in-out background-color, .5s ease-in-out color;
-    }
-    details[open] summary{
-      background-color: rgb(34, 35, 68);
-      color:white;
     }
 }
 
@@ -200,7 +200,7 @@ header{
 footer{
   width: 100%;
   height: max-content;
-  background-color: rgb(34, 35, 68);
+  background-color: #150e10;
   .f-navigation{
     width: 100%;
     height: max-content;

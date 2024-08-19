@@ -14,7 +14,7 @@ function Landing({data}) {
     <div>
       <div className='land'>
         <div className='land-text'>
-          <h1 style={{fontSize:'3rem', textWrap:'balance', marginBottom:'10px'}}>The Sky and Myself</h1>
+          <h2>The Sky and Myself</h2>
         </div>
         <div className='land-cols'>
           {selectimg.map((image, index) => (

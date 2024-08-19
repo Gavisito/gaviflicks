@@ -10,7 +10,7 @@
   position: sticky !important;
   top: 0;
   z-index: 9999;
-  background-color: rgb(34, 35, 68);
+  background-color: #150e10;
   transition: background-color 0.3s ease-in-out;
 }
 .navigation .nav {
@@ -23,27 +23,27 @@
   align-items: center;
   display: flex;
   flex-direction: row;
+  transition: 0.5s ease;
+}
+.navigation .branding:hover {
+  transform: translateY(-1vw);
+  cursor: pointer;
 }
 .navigation .company-name {
   font-size: 1.25rem;
   padding-left: 0.5em;
-  transition: 0.7s;
-}
-.navigation .company-name:hover {
-  cursor: pointer;
 }
 .navigation .nav-link {
   transition: 0.5s ease;
   cursor: pointer;
   font-size: 1.5rem;
-  text-decoration: underline;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .navigation .nav-link:hover {
-  transform: scale(1.1);
+  transform: translateY(-1vw);
   cursor: pointer;
 }
 .navigation .ham-icon {
@@ -83,9 +83,8 @@
     flex-direction: column !important;
     background-color: #FAFAFA;
     width: 100%;
-    height: 60svh;
+    max-height: 40svh;
     padding: 10vh 0;
-    gap: 25px;
     opacity: 0%;
     transition: 0.75s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
@@ -93,8 +92,9 @@
     width: 100%;
     height: -moz-max-content;
     height: max-content;
-    font-size: 1.75rem;
-    text-align: center;
+    font-size: 3rem;
+    justify-content: end;
+    padding-right: 15px;
     color: black !important;
   }
   .navigation .nav.active {
@@ -118,46 +118,50 @@
   height: max-content;
   align-items: center;
   justify-content: space-around;
-  padding: 4.5em 0 4em 0;
   background-size: 100% 100%;
-  background-color: rgb(34, 35, 68);
+  position: relative;
+}
+.land::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.535) 0%, rgba(0, 0, 0, 0.186) 100%);
+  z-index: 3;
+  pointer-events: none;
 }
 .land .land-text {
-  display: flex;
-  background-color: transparent;
+  position: absolute;
   color: white !important;
-  width: 60%;
-  text-decoration: underline;
-  height: -moz-max-content;
-  height: max-content;
   text-wrap: balance;
-  justify-content: space-around;
+  display: flex;
   text-align: center;
+  text-wrap: balance;
+  justify-content: center;
+  z-index: 4;
+}
+.land .land-text h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
 }
 .land .land-cols {
   display: flex;
-  width: 70%;
+  width: 100%;
   height: -moz-max-content;
   height: max-content;
   align-items: flex-end;
   justify-content: flex-start;
   background-color: white;
-  border-color: white;
-  border-width: 3px 1em 3px 1em;
-  border-style: solid;
-  border-radius: 1%;
   overflow-x: scroll;
   overflow-y: hidden;
 }
 .land .land-cols .box4, .land .land-cols .box3, .land .land-cols .box2, .land .land-cols .box1 {
   display: flex;
-  background-color: #ffffff;
+  background-color: rgb(34, 21, 38);
   width: 25%;
-  height: 20em;
-  border-width: 3px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 3%;
+  height: 60vh;
+  border: 2px solid whitesmoke;
   transition: width 0.4s ease-in, height 0.4s ease-in;
   cursor: pointer;
 }
@@ -166,11 +170,9 @@
   height: 100%;
 }
 .land .land-cols .box4:hover, .land .land-cols .box3:hover, .land .land-cols .box2:hover, .land .land-cols .box1:hover {
-  width: 30em;
-  height: 25em;
-  color: white;
+  width: 40%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .land .land-text {
     width: 80%;
     margin-left: 7vw;
@@ -178,7 +180,7 @@
     margin-bottom: 2em;
   }
   .land .land-cols {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0 5vw;
     flex-wrap: wrap;
@@ -186,11 +188,11 @@
   }
   .land .land-cols .box1, .land .land-cols .box2, .land .land-cols .box3, .land .land-cols .box4 {
     width: 50%;
-    height: 40dvw;
+    height: 45dvw;
   }
   .land .land-cols .box1:hover, .land .land-cols .box2:hover, .land .land-cols .box3:hover, .land .land-cols .box4:hover {
     width: 50%;
-    height: 40dvw;
+    height: 45dvw;
   }
 }
 
@@ -331,7 +333,7 @@
   padding: 125px 3vw 20px 3vw;
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #FAFAFA;
   overflow: auto;
 }
 .popup h2 {
